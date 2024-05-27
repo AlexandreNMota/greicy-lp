@@ -1,3 +1,4 @@
+import { Header } from "./components";
 import {
   About,
   Autorias,
@@ -10,6 +11,7 @@ import {
 function App() {
   return (
     <>
+      <Header section={"hero"} />
       <Hero />
       <WhyTherapy />
       <WhyItWorks />

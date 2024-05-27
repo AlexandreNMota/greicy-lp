@@ -1,15 +1,27 @@
 import React, { ReactNode, createContext, useEffect, useState } from "react";
+import { DIMENSIONS } from "../../constantes/dimensions";
+export type Dimensions = {
+  headerHeight: string;
+};
+interface AppContextType {
+  dimensions: Dimensions;
+  section: string;
+}
 
-interface AppContextType {}
-
-export const AppContext = createContext<AppContextType | undefined>(undefined);
+export const AppContext = createContext<AppContextType | null>(null);
 
 interface AppProviderProps {
   children: ReactNode;
 }
 
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const [dimensions, setDimensions] = useState(DIMENSIONS);
+  const [section, setSection] = useState<string>("hero");
+  return (
+    <AppContext.Provider value={{ dimensions, section }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export default AppProvider;

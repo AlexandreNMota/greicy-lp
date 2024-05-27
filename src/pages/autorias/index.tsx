@@ -1,9 +1,11 @@
-import { Section } from "../../components";
+import useAppContext from "../../context/app/useAppContext";
+import { CustomStyledSection } from "./styles";
 
 export const Autorias = () => {
+  const { dimensions } = useAppContext();
   return (
-    <Section>
+    <CustomStyledSection full={true} dimensions={dimensions}>
       <h1>Autorias</h1>
-    </Section>
+    </CustomStyledSection>
   );
 };
