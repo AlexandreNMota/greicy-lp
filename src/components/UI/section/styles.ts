@@ -5,7 +5,7 @@ export const StyledSection = styled("section")(
     return {
       height: full ? "100vh" : "auto",
       minHeight: full ? "100vh" : "auto",
-      width: "100vw",
+      width: "100%",
     };
   }
 );
