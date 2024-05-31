@@ -39,6 +39,7 @@ export const Navbar = ({ ...props }) => {
         <Drawer
           container={container}
           variant="temporary"
+          anchor="right"
           open={props.mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
@@ -46,7 +47,7 @@ export const Navbar = ({ ...props }) => {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: dimensions.headerHeight },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: `calc(${dimensions.headerHeight} * 3)` },
           }}
         >
           {drawer}

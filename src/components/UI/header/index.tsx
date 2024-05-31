@@ -11,7 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 
 export const Header: FC<HeaderProps> = ({ section, ...props }) => {
-  const { dimensions } = useAppContext();
+  const { dimensions, isMobile } = useAppContext();
   const menuList = Menus;
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -25,15 +25,11 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
         <CssBaseline />
         <StyledAppBar component="nav">
           <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: 'none' } }}
-            >
-              <MenuIcon />
-            </IconButton>
+            {
+              isMobile && (
+                <img src="images/logo greicy 1.png" style={{ width: '60px' }}></img>
+              )
+            }
             {/* <CustomTypography
               variant="h6"
               component="div"
@@ -50,9 +46,22 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
               ))}
             </Box>
             <Box sx={{ flexGrow: 1 }} />
-            <StyledButton className="poppins" onClick={() => { }} startIcon={<WhatsAppIcon />} disableRipple>
-              Agendar Consulta
-            </StyledButton>
+            {
+              !isMobile && (
+                <StyledButton className="poppins" onClick={() => { }} startIcon={<WhatsAppIcon />} disableRipple>
+                  Agendar Consulta
+                </StyledButton>
+              )
+            }
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ display: { sm: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
           </Toolbar>
         </StyledAppBar>
         <Navbar handleDrawerToggle={handleDrawerToggle}

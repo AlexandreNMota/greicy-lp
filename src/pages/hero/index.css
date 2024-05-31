@@ -1,27 +1,200 @@
+:root {
+    --eclipse42-width: calc(100vw * 0.45);
+    --eclipse43-width: calc(100vw * 0.44);
+    --greicyHome-width: calc(100vw * 0.192);
+    --logoHome-width: calc(100vw * 0.1);
+
+    --eclipse48-width-mobile: calc(100vw * 1);
+    --eclipse49-width-mobile: calc(100vw * 0.8);
+    --greicyHome-width-mobile: calc(100vw * 0.6);
+    /* --logoHome-width-mobile: calc(100vw * 0.1); */
+}
+
 .eclipse42 {
     position: absolute;
     top: -84px;
     right: 0;
-    width: 738.641px;
+    /* width: 738.641px; */
+    width: var(--eclipse42-width);
     /* left: 674px; */
+}
+
+.eclipse48-mobile {
+    position: absolute;
+    /* width: 738.641px; */
+    width: var(--eclipse48-width-mobile);
+    /* left: 674px; */
+    top: 27px;
 }
 
 .eclipse43 {
     position: absolute;
     top: -54px;
     right: 0;
-    width: 717.938px;
+    /* width: 717.938px; */
+    width: var(--eclipse43-width);
     /* left: 716px; */
+}
+
+.eclipse49-mobile {
+    position: absolute;
+    /* width: 717.938px; */
+    width: var(--eclipse49-width-mobile);
+    /* left: 716px; */
+    top: 37px;
 }
 
 .greicyHome {
     position: absolute;
     right: 151px;
-    width: 268px;
+    /* width: 268px; */
+    width: var(--greicyHome-width);
     top: 50px;
 }
 
+.greicyHome-mobile {
+    z-index: 999;
+    position: relative;
+    width: var(--greicyHome-width-mobile);
+}
+
 .logoHome {
-    width: 146px;
+    /* width: 146px; */
+    width: var(--logoHome-width);
     margin-left: 90px;
+}
+
+.titleHome {
+    font-size: 3vw !important;
+}
+
+.subtitleHome {
+    font-size: 1vw !important;
+}
+
+.containerHome {
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+}
+
+/* Estilos para dispositivos minusculos (celulares) */
+@media (min-width: 375px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 9vw !important;
+        /* ajuste para telas pequenas */
+    }
+
+    .subtitleHome {
+        font-size: 5vw !important;
+        /* ajuste para telas pequenas */
+    }
+}
+
+/* Estilos para dispositivos pequenos (celulares) */
+@media (min-width: 576px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 3vw !important;
+        /* ajuste para telas pequenas */
+    }
+
+    .subtitleHome {
+        font-size: 2.5vw !important;
+        /* ajuste para telas pequenas */
+    }
+}
+
+/* Estilos para dispositivos médios (tablets) */
+@media (min-width: 768px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 2.5vw !important;
+        /* ajuste para telas médias */
+    }
+
+    .subtitleHome {
+        font-size: 2vw !important;
+        /* ajuste para telas médias */
+    }
+}
+
+/* Estilos para dispositivos grandes (desktops) */
+@media (min-width: 992px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 2vw !important;
+        /* ajuste para telas grandes */
+    }
+
+    .subtitleHome {
+        font-size: 1.5vw !important;
+        /* ajuste para telas grandes */
+    }
+}
+
+/* Estilos para dispositivos extra grandes (desktops grandes) */
+@media (min-width: 1200px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 3.4vw !important;
+        /* ajuste para telas muito grandes */
+    }
+
+    .subtitleHome {
+        font-size: 1vw !important;
+        /* ajuste para telas muito grandes */
+    }
+}
+
+/* Estilos para dispositivos ultra grandes (monitores grandes) */
+@media (min-width: 1600px) {
+    :root {
+        --eclipse42-width: calc(100vw * 0.45);
+        --eclipse43-width: calc(100vw * 0.44);
+        --greicyHome-width: calc(100vw * 0.192);
+        --logoHome-width: calc(100vw * 0.1);
+    }
+
+    .titleHome {
+        font-size: 1.5vw !important;
+        /* ajuste para telas muito grandes */
+    }
+
+    .subtitleHome {
+        font-size: 1.2vw !important;
+        /* ajuste para telas muito grandes */
+    }
+
 }
