@@ -10,6 +10,11 @@
     /* --logoHome-width-mobile: calc(100vw * 0.1); */
 }
 
+@font-face {
+    font-family: The Strength;
+    src: url('/fontes/The\ Strength.ttf');
+}
+
 .eclipse42 {
     position: absolute;
     top: -84px;
@@ -52,6 +57,27 @@
     top: 50px;
 }
 
+.div_homelogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+    width: 137px;
+    align-items: center;
+}
+
+.greicy_name {
+    color: black !important;
+    font-family: 'The Strength' !important;
+    font-size: 45px !important;
+    font-style: italic !important;
+    /* margin: 0 !important; */
+    margin-top: 10px !important;
+    display: inline-block !important;
+    line-height: 18px !important;
+    vertical-align: middle !important;
+}
+
 .greicyHome-mobile {
     z-index: 999;
     position: relative;
@@ -61,7 +87,7 @@
 .logoHome {
     /* width: 146px; */
     width: var(--logoHome-width);
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
 .titleHome {
@@ -79,12 +105,11 @@
 }
 
 /* Estilos para dispositivos minusculos (celulares) */
-@media (min-width: 375px) {
+@media (min-width: 345px) {
     :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
+        --eclipse48-width-mobile: calc(100vw * 1);
+        --eclipse49-width-mobile: calc(100vw * 0.8);
+        --greicyHome-width-mobile: calc(100vw * 0.6);
     }
 
     .titleHome {

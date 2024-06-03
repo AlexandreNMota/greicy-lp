@@ -3,6 +3,7 @@ import { Dimensions } from "../../../context/app";
 
 export interface SectionProps {
   children: ReactNode;
+  id: string;
 }
 
 export interface StyledSectionProps {

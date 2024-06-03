@@ -8,14 +8,17 @@ export const Hero = () => {
   const { dimensions, isMobile } = useAppContext();
 
   return (
-    <CustomStyledSection full={true} dimensions={dimensions}>
+    <CustomStyledSection full={true} dimensions={dimensions} id="home-section">
       {
         !isMobile && (
           <div>
             <img src="images/Ellipse 42.png" className="eclipse42"></img>
             <img src="images/Ellipse 43.png" className="eclipse43"></img>
             <img src="images/greicyhome.png" className="greicyHome"></img>
-            <img src="images/logo greicy 1.png" className="logoHome"></img>
+            <div className="div_homelogo">
+              <img src="images/logo greicy 1.png" className="logoHome"></img>
+              <Typography className="greicy_name">Greicy Pais</Typography>
+            </div>
           </div>
         )
       }

@@ -19,6 +19,23 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const scrollToAnchor = (section: any) => {
+    const element = section === 'Inicio' ? 'home-section' :
+      section === 'Produtos' ? 'productos-section' :
+        section === 'Sobre' ? 'sobre-section' :
+          section === 'Contatos' ? 'contato-section'
+            : 'home-section'
+
+    const destination = document.querySelector(`#${element}`);
+    if (destination) {
+      const offsetTop = destination.getBoundingClientRect().top + window.pageYOffset - 60;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <StyledHeader dimensions={dimensions} section={section} {...props}>
       <Box sx={{ display: 'flex' }}>
@@ -40,7 +57,8 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', sm: 'block' }, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
               {menuList.map((item) => (
-                <Button className="source-sans-3" key={item} sx={{ color: '#000', textTransform: 'none' }}>
+                <Button className="source-sans-3" key={item} sx={{ color: '#000', textTransform: 'none' }}
+                  onClick={() => scrollToAnchor(item)}>
                   {item}
                 </Button>
               ))}
