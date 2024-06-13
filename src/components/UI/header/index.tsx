@@ -4,11 +4,10 @@ import { StyledAppBar, StyledButton, StyledHeader } from "./styles";
 import useAppContext from "../../../context/app/useAppContext";
 import { Navbar } from "./navbar";
 import { Box, Button, CssBaseline, IconButton, Toolbar } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import { Menus } from "../../../constantes/menus";
 import { CustomTypography } from "../typography";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Header: FC<HeaderProps> = ({ section, ...props }) => {
   const { dimensions, isMobile } = useAppContext();
@@ -20,33 +19,40 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
   };
 
   const scrollToAnchor = (section: any) => {
-    const element = section === 'Inicio' ? 'home-section' :
-      section === 'Produtos' ? 'productos-section' :
-        section === 'Sobre' ? 'sobre-section' :
-          section === 'Contatos' ? 'contato-section'
-            : 'home-section'
+    const element =
+      section === "Inicio"
+        ? "home-section"
+        : section === "Produtos"
+        ? "productos-section"
+        : section === "Sobre"
+        ? "sobre-section"
+        : section === "Contatos"
+        ? "contato-section"
+        : "home-section";
 
     const destination = document.querySelector(`#${element}`);
     if (destination) {
-      const offsetTop = destination.getBoundingClientRect().top + window.pageYOffset - 60;
+      const offsetTop =
+        destination.getBoundingClientRect().top + window.pageYOffset - 60;
       window.scrollTo({
         top: offsetTop,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
 
   return (
     <StyledHeader dimensions={dimensions} section={section} {...props}>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <StyledAppBar component="nav">
           <Toolbar>
-            {
-              isMobile && (
-                <img src="images/logo greicy 1.png" style={{ width: '60px' }}></img>
-              )
-            }
+            {isMobile && (
+              <img
+                src="images/logo greicy 1.png"
+                style={{ width: "60px" }}
+              ></img>
+            )}
             {/* <CustomTypography
               variant="h6"
               component="div"
@@ -55,36 +61,53 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
               MUI
             </CustomTypography> */}
             <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ display: { xs: 'none', sm: 'block' }, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "block" },
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
               {menuList.map((item) => (
-                <Button className="source-sans-3" key={item} sx={{ color: '#000', textTransform: 'none' }}
-                  onClick={() => scrollToAnchor(item)}>
+                <Button
+                  className="source-sans-3"
+                  key={item}
+                  sx={{ color: "#000", textTransform: "none" }}
+                  onClick={() => scrollToAnchor(item)}
+                >
                   {item}
                 </Button>
               ))}
             </Box>
             <Box sx={{ flexGrow: 1 }} />
-            {
-              !isMobile && (
-                <StyledButton className="poppins" onClick={() => { }} startIcon={<WhatsAppIcon />} disableRipple>
-                  Agendar Consulta
-                </StyledButton>
-              )
-            }
+            {!isMobile && (
+              <StyledButton
+                className="poppins"
+                onClick={() => {}}
+                startIcon={<WhatsAppIcon />}
+                disableRipple
+              >
+                Agendar Consulta
+              </StyledButton>
+            )}
             <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: 'none' } }}
+              sx={{ display: { sm: "none" } }}
             >
               <MenuIcon />
             </IconButton>
           </Toolbar>
         </StyledAppBar>
-        <Navbar handleDrawerToggle={handleDrawerToggle}
+        <Navbar
+          handleDrawerToggle={handleDrawerToggle}
           mobileOpen={mobileOpen}
-          setMobileOpen={setMobileOpen} />
+          setMobileOpen={setMobileOpen}
+        />
       </Box>
 
       {/* <Grid container spacing={4}>
