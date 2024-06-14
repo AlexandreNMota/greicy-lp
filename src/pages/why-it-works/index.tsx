@@ -35,6 +35,7 @@ export const WhyItWorks = () => {
         </Grid>
         <Grid xs={6}></Grid>
       </Grid> */}
+      <></>
     </Section>
   );
 };
