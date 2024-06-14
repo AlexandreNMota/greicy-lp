@@ -16,7 +16,7 @@ export const StyledHeader = styled("div")(
   }
 );
 
-export const StyledButton = styled(Button)(({ }) => {
+export const StyledButton = styled(Button)(({}) => {
   return {
     color: "#fff",
     // padding: "10px",
@@ -25,18 +25,18 @@ export const StyledButton = styled(Button)(({ }) => {
     borderBottom: "2px solid #3775A8",
     borderRight: "2px solid #3775A8",
     boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
-    textTransform: 'none',
-    '&:hover': {
-      backgroundColor: "#5EC2ED", 
+    textTransform: "none",
+    "&:hover": {
+      backgroundColor: "#5EC2ED",
     },
   };
 });
 
-export const StyledAppBar = styled(AppBar)(({  }: StyledAppBarProps) => {
+export const StyledAppBar = styled(AppBar)(({}: StyledAppBarProps) => {
   return {
-    backgroundColor: "transparent",
-    color: '#000',
+    backgroundColor: "#fff",
+    color: "#000",
     borderColor: "transparent",
-    boxShadow: "none"
-  }
-})
+    boxShadow: "none",
+  };
+});

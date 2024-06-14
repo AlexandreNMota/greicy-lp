@@ -3,6 +3,7 @@ import React, { ReactNode, createContext, useEffect, useState } from "react";
 interface DoencaContextType {
   isPlaying: boolean;
   play: () => void;
+  stopPlaying: () => void;
   truncateText: (text: string, maxLength: number) => string;
 }
 
@@ -17,6 +18,9 @@ const DoencaProvider: React.FC<DoencaProviderProps> = ({ children }) => {
   const play = () => {
     setIsPlaying(true);
   };
+  const stopPlaying = () => {
+    setIsPlaying(false);
+  };
 
   const truncateText: (text: string, maxLength: number) => string = (
     text: string,
@@ -28,7 +32,9 @@ const DoencaProvider: React.FC<DoencaProviderProps> = ({ children }) => {
     return text;
   };
   return (
-    <DoencaContext.Provider value={{ isPlaying, play, truncateText }}>
+    <DoencaContext.Provider
+      value={{ isPlaying, play, truncateText, stopPlaying }}
+    >
       {children}
     </DoencaContext.Provider>
   );
