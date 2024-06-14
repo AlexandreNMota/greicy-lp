@@ -34,9 +34,10 @@ export const StyledButton = styled(Button)(({}) => {
 
 export const StyledAppBar = styled(AppBar)(({}: StyledAppBarProps) => {
   return {
-    backgroundColor: "#fff",
+    backgroundColor: "transparent",
     color: "#000",
     borderColor: "transparent",
     boxShadow: "none",
+    position: "absolute",
   };
 });
