@@ -4,7 +4,7 @@ import { Section } from "../../components";
 export const WhyItWorks = () => {
   return (
     <Section id="como-funciona-section">
-      <Grid container spacing={4}>
+      {/* <Grid container spacing={4}>
         <Grid
           xs={6}
           sx={{
@@ -34,7 +34,7 @@ export const WhyItWorks = () => {
           </Typography>
         </Grid>
         <Grid xs={6}></Grid>
-      </Grid>
+      </Grid> */}
     </Section>
   );
 };
