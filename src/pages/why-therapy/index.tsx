@@ -109,17 +109,7 @@ export const WhyTherapy = () => {
           )}
         </Grid>
       </Grid>
-      <img
-        src="images/Ellipse 36.png"
-        className="eclipse36"
-        style={{
-          transform: "rotate(175deg)",
-          position: "absolute",
-          top: "182vh",
-          zIndex: 1,
-        }}
-        alt="Ellipse"
-      ></img>
+
       <div
         style={{
           width: "100%",
@@ -138,6 +128,17 @@ export const WhyTherapy = () => {
           Agendar Consulta
         </StyledButton>
       </div>
+      <img
+        src="images/Ellipse 36.png"
+        className="eclipse36"
+        style={{
+          transform: "rotate(175deg)",
+          position: "absolute",
+          top: "220vh",
+          zIndex: 1,
+        }}
+        alt="Ellipse"
+      ></img>
     </Section>
   );
 };

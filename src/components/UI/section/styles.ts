@@ -4,7 +4,7 @@ export const StyledSection = styled("section")(
   ({ full, dimensions }: StyledSectionProps) => {
     return {
       height: full ? "100%" : "auto",
-      minHeight: full ? "100vh" : "auto",
+      minHeight: "auto",
       width: "100%",
     };
   }
