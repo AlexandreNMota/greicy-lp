@@ -5,6 +5,7 @@ import {
   Contato,
   Depoimentos,
   Hero,
+  PerguntasFrequentes,
   WhyItWorks,
   WhyTherapy,
 } from "./pages";
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Autorias />
       <Depoimentos />
+      <PerguntasFrequentes />
       <Contato />
     </>
   );
