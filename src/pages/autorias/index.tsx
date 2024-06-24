@@ -1,10 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Section } from "../../components";
-import imagem from "../../assets/Our_People.png";
-import wave from "../../assets/Rectangle 699.png";
 import logo from "../../assets/produtos-logo.png";
-import bgWave from "../../assets/bg-produtos.png";
+import bgWave from "../../assets/Our_People.png";
 import sign from "../../assets/sign.png";
+import GreicyModel from "../../assets/greicy-top-model.png";
+import bgWaveProdutos from "../../assets/bg-produtos-wave.png";
 export const Autorias = () => {
   return (
     <Section id="productos-section">
@@ -29,19 +29,15 @@ export const Autorias = () => {
           <Typography
             className="source-sans-3"
             sx={{
-              fontSize: "24px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "34px",
-              width: "92px",
-              height: "16px",
+              fontSize: "1rem",
+              fontWeight: "400 !important",
               color: "#44C6E9",
             }}
           >
             Produtos
           </Typography>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             width: "100%",
             display: "flex",
@@ -75,7 +71,7 @@ export const Autorias = () => {
               background: `url("${sign}")`,
             }}
           ></Box>
-        </Box>
+        </Box> */}
         <Grid container>
           <Grid
             item
@@ -83,34 +79,63 @@ export const Autorias = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
             }}
           >
             <Typography
               className="poppins"
-              sx={{ color: "#fff", fontSize: "32px", fontWeight: "bold" }}
+              sx={{
+                color: "#fff",
+                fontSize: "32px",
+                fontWeight: "700 !important",
+              }}
             >
               Autorias
             </Typography>
             <Typography
               sx={{
-                color: "#fff",
-                fontSize: "18px",
-                fontWeight: "normal",
-                textAlign: "justifysy",
+                color: "#F5F5F5",
+                fontSize: "16px",
+                fontWeight: "100 !important",
+                textAlign: "justify",
               }}
             >
-              Bem-vindo à sua jornada de autodescoberta e crescimento pessoal!
-              Você está prestes a descobrir uma ferramenta revolucionária que
-              vai transformar a maneira como você lida com desafios pessoais.
-              Uma caixinha de ferramentas com 100 cartas contendo técnicas,
-              exercícios e reflexões para você aprender a lidar com a sua
-              ansiedade e/ou trabalhar com os seus pacientes
+              A ideia em criar esses baralhos psicoterapêuticos foi para que o
+              coconhecimento relativo ao tema proposto em cada temática fosse
+              adquirido de forma dinâmica e flexível. São ferramentas incríveis
+              que vão mudar sua forma de pensar a respeito de tais temas. Eles
+              tem formato de livro em caixinha, contendo sumário, manual de
+              instruções de uso em QR Code, e muita psicoeducação com
+              estratégias de ação. Podem ser utilizados individualmente ou em
+              set terapêutico.
             </Typography>
           </Grid>
-          <Grid item xs={6}></Grid>
+          <Grid
+            item
+            xs={6}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+            }}
+          >
+            <img
+              src={GreicyModel}
+              style={{ width: "800px", height: "800px" }}
+            />
+          </Grid>
         </Grid>
+        <img
+          src={bgWaveProdutos}
+          style={{
+            position: "absolute",
+            bottom: -3210,
+            left: 0,
+            width: "100%",
+            height: "300px",
+          }}
+        />
       </Box>
     </Section>
   );

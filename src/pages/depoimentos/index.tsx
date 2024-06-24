@@ -64,7 +64,11 @@ export const Depoimentos = () => {
       >
         <Typography
           className="source-sans-3"
-          sx={{ color: "#44C6E9", fontSize: "1rem", fontWeight: "bold" }}
+          sx={{
+            color: "#44C6E9",
+            fontSize: "1rem",
+            fontWeight: "400 !important",
+          }}
         >
           Meus Clientes
         </Typography>

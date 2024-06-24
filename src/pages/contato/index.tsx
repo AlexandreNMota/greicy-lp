@@ -29,7 +29,6 @@ export const Contato = () => {
               textAlign: "initial",
               color: "#fff",
               fontSize: "40px",
-
               marginBottom: "20px",
             }}
           >
