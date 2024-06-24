@@ -3,16 +3,19 @@ import { Section } from "../../components";
 import imagem from "../../assets/Our_People.png";
 import wave from "../../assets/Rectangle 699.png";
 import logo from "../../assets/produtos-logo.png";
+import bgWave from "../../assets/bg-produtos.png";
 import sign from "../../assets/sign.png";
 export const Autorias = () => {
   return (
     <Section id="productos-section">
       <Box
         sx={{
-          backgroundImage: `url(${imagem}), url(${wave})`,
-          backgroundPosition: "center center, left bottom",
-          width: "100%",
-          height: "100%",
+          backgroundImage: `url(${bgWave})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "150vh",
         }}
       >
         <Box
