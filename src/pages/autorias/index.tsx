@@ -95,7 +95,7 @@ export const Autorias = () => {
                 color: "#fff",
                 fontSize: "18px",
                 fontWeight: "normal",
-                textAlign: "justify",
+                textAlign: "justifysy",
               }}
             >
               Bem-vindo à sua jornada de autodescoberta e crescimento pessoal!

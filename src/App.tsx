@@ -3,6 +3,7 @@ import {
   About,
   Autorias,
   Contato,
+  Depoimentos,
   Hero,
   WhyItWorks,
   WhyTherapy,
@@ -17,6 +18,7 @@ function App() {
       <WhyItWorks />
       <About />
       <Autorias />
+      <Depoimentos />
       <Contato />
     </>
   );
