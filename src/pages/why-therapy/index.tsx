@@ -70,7 +70,7 @@ export const WhyTherapy = () => {
             </Typography>
             <Typography
               className="poppins subtitle-especialidades"
-              variant="h3"
+              sx={{ fontSize: "40px !important" }}
               marginTop={2}
             >
               Porque e quando buscar terapia?

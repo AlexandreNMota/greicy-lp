@@ -6,7 +6,7 @@ import logo from "../../assets/produtos-logo.png";
 import sign from "../../assets/sign.png";
 export const Autorias = () => {
   return (
-    <Section id="autorias-section">
+    <Section id="productos-section">
       <Box
         sx={{
           backgroundImage: `url(${imagem}), url(${wave})`,

@@ -87,7 +87,13 @@ export const PerguntasFrequentes = () => {
       </Box>
       {perguntasFrequentes.map((item, i) => (
         <Box key={i} sx={{ width: "80%", margin: "auto" }}>
-          <Accordion>
+          <Accordion
+            sx={{
+              marginTop: "10px",
+              marginBottom: "10px",
+              boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+            }}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon sx={{ color: "#2976D2" }} />}
               aria-controls="panel1-content"

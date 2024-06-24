@@ -19,7 +19,7 @@ export const WhyItWorks = () => {
         >
           <Typography
             className="poppins"
-            sx={{ color: "#00296D", fontWeight: "bold", fontSize: "64px" }}
+            sx={{ color: "#00296D", fontWeight: "bold", fontSize: "40px" }}
           >
             Como funciona?
           </Typography>
