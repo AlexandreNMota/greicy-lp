@@ -5,7 +5,7 @@ import {
   Box,
   Typography,
 } from "@mui/material";
-import { Section, Title } from "../../components";
+import { BigText, Section, Title } from "../../components";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const perguntasFrequentes = [
@@ -67,18 +67,7 @@ export const PerguntasFrequentes = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          className="poppins"
-          sx={{
-            textAlign: "initial",
-            color: "#00296D",
-            fontSize: "40px",
-            fontWeight: "bold",
-            marginBottom: "20px",
-          }}
-        >
-          Perguntas Frequentes
-        </Typography>
+        <BigText text="Perguntas Frequentes" hasMarginBottom={true} />
       </Box>
       {perguntasFrequentes.map((item, i) => (
         <Box key={i} sx={{ width: "80%", margin: "auto" }}>

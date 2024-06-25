@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { Section, Title } from "../../components";
+import { GridContainer, GridItem, Section, Title } from "../../components";
 import logo from "../../assets/produtos-logo.png";
 import bgWave from "../../assets/Our_People.png";
 import sign from "../../assets/sign.png";
@@ -42,17 +42,8 @@ export const Autorias = () => {
             width: "150px",
           }}
         />
-        <Grid container>
-          <Grid
-            item
-            xs={6}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-around",
-              alignItems: "center",
-            }}
-          >
+        <GridContainer>
+          <GridItem xs={6} flexAround={true} directionFlex="column">
             <Box
               sx={{
                 display: "flex",
@@ -135,16 +126,8 @@ export const Autorias = () => {
                 </Typography>
               </Button>
             </Box>
-          </Grid>
-          <Grid
-            item
-            xs={6}
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-            }}
-          >
+          </GridItem>
+          <GridItem xs={6} flexStart={true}>
             <img
               src={GreicyModel}
               style={{
@@ -155,8 +138,8 @@ export const Autorias = () => {
                 right: "-20%",
               }}
             />
-          </Grid>
-        </Grid>
+          </GridItem>
+        </GridContainer>
         <img
           src={bgWaveProdutos}
           style={{

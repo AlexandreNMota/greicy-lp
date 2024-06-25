@@ -1,5 +1,5 @@
 import { Box, Grid, IconButton, Typography } from "@mui/material";
-import { DoencaCard, Section, Title } from "../../components";
+import { BigText, DoencaCard, Section, Title } from "../../components";
 import "./index.css";
 import DoencaProvider from "../../context/doenca-cards";
 import { useState } from "react";
@@ -66,13 +66,7 @@ export const WhyTherapy = () => {
             flexDirection={"column"}
           >
             <Title title="Especialidades" />
-            <Typography
-              className="poppins subtitle-especialidades"
-              sx={{ fontSize: "40px !important" }}
-              marginTop={2}
-            >
-              Porque e quando buscar terapia?
-            </Typography>
+            <BigText text="Porque e quando buscar terapia?" marginTop={2} />
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} marginTop={2}>

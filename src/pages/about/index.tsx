@@ -1,5 +1,11 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
-import { Section, Title } from "../../components";
+import {
+  BigText,
+  GridContainer,
+  GridItem,
+  Section,
+  Title,
+} from "../../components";
 import anjo from "../../assets/greicy-anjo.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { StyledButton } from "../../components/UI/header/styles";
@@ -16,17 +22,8 @@ export const About = () => {
       >
         <Title title="Sobre mim" />
       </Box>
-      <Grid container>
-        <Grid
-          item
-          xs={6}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "center",
-          }}
-        >
+      <GridContainer>
+        <GridItem directionFlex="column" flexStart={true} xs={6}>
           <Box>
             <img src={anjo} width="400" height="400"></img>
           </Box>
@@ -39,20 +36,9 @@ export const About = () => {
           >
             Agendar Consulta
           </StyledButton>
-        </Grid>
-        <Grid item xs={6} sx={{ paddingLeft: "100px", paddingRight: "100px" }}>
-          <Typography
-            className="poppins"
-            sx={{
-              textAlign: "initial",
-              color: "#00296D",
-              fontSize: "40px",
-              fontWeight: "bold",
-              marginBottom: "20px",
-            }}
-          >
-            Dra Greicy Pais
-          </Typography>
+        </GridItem>
+        <GridItem unflex={true} xs={6} padded={true}>
+          <BigText text="Dra Greicy Pais" hasMarginBottom={true} />
           <Typography
             className="source-sans-3"
             sx={{ textAlign: "justify", color: "#000000", fontSize: "14px" }}
@@ -111,8 +97,8 @@ export const About = () => {
               {"Currículo Completo>"}
             </Typography>
           </Link>
-        </Grid>
-      </Grid>
+        </GridItem>
+      </GridContainer>
     </Section>
   );
 };

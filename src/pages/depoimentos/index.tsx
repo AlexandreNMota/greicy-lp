@@ -7,7 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Section, Title } from "../../components";
+import { BigText, Section, Title } from "../../components";
 import Carousel from "react-material-ui-carousel";
 
 const tutorialSteps = [
@@ -72,18 +72,7 @@ export const Depoimentos = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          className="poppins"
-          sx={{
-            textAlign: "initial",
-            color: "#00296D",
-            fontSize: "40px",
-            fontWeight: "bold",
-            marginBottom: "20px",
-          }}
-        >
-          Depoimentos
-        </Typography>
+        <BigText text="Depoimentos" hasMarginBottom={true} />
       </Box>
       <Carousel sx={{ width: "85%", margin: "auto", marginTop: "50px" }}>
         {tutorialSteps.map((item, i) => (

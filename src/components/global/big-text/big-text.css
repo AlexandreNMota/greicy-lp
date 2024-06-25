@@ -1,0 +1,10 @@
+.big-text {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 40px !important;
+  color: #00296d;
+}
+.big-text-mb {
+  margin-bottom: 20px !important;
+}

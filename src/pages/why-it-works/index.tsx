@@ -1,28 +1,14 @@
-import { Grid, Typography } from "@mui/material";
-import { Section } from "../../components";
+import { Typography } from "@mui/material";
+import { BigText, GridContainer, GridItem, Section } from "../../components";
 import desktop from "../../assets/Desktop.png";
 import { StyledButton } from "../../components/UI/header/styles";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export const WhyItWorks = () => {
   return (
     <Section id="como-funciona-section">
-      <Grid container sx={{ marginTop: "50px" }}>
-        <Grid
-          item
-          xs={6}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Typography
-            className="poppins"
-            sx={{ color: "#00296D", fontWeight: "bold", fontSize: "40px" }}
-          >
-            Como funciona?
-          </Typography>
+      <GridContainer hasMarginTop={true}>
+        <GridItem directionFlex="column" xs={6}>
+          <BigText text="Como funciona?" />
           <Typography
             className="poppins"
             sx={{ color: "#2977D5", fontWeight: "bold", fontSize: "28px" }}
@@ -71,19 +57,11 @@ export const WhyItWorks = () => {
           >
             Agendar Consulta
           </StyledButton>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        </GridItem>
+        <GridItem directionFlex="row" xs={6}>
           <img src={desktop} width="600" height="391" />
-        </Grid>
-      </Grid>
+        </GridItem>
+      </GridContainer>
     </Section>
   );
 };
