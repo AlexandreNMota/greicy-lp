@@ -11,27 +11,15 @@ import { perguntasFrequentes } from "../../constantes/perguntasFrequentes";
 export const PerguntasFrequentes = () => {
   return (
     <Section id="duvidas-section">
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "50px",
-        }}
-      >
-        <Title title="Dúvidas" />
-      </Box>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <BigText text="Perguntas Frequentes" hasMarginBottom={true} />
-      </Box>
+      <Title
+        title="Dúvidas"
+        sx={{ width: "100%", textAlign: "center", marginTop: "50px" }}
+      />
+      <BigText
+        text="Perguntas Frequentes"
+        hasMarginBottom={true}
+        sx={{ width: "100%", textAlign: "center" }}
+      />
       {perguntasFrequentes.map((item, i) => (
         <Box key={i} sx={{ width: "80%", margin: "auto" }}>
           <Accordion
