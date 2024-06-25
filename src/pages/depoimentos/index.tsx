@@ -7,7 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Section } from "../../components";
+import { Section, Title } from "../../components";
 import Carousel from "react-material-ui-carousel";
 
 const tutorialSteps = [
@@ -62,16 +62,7 @@ export const Depoimentos = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          className="source-sans-3"
-          sx={{
-            color: "#44C6E9",
-            fontSize: "1rem",
-            fontWeight: "400 !important",
-          }}
-        >
-          Meus Clientes
-        </Typography>
+        <Title title="Meus Clientes" />
       </Box>
       <Box
         sx={{

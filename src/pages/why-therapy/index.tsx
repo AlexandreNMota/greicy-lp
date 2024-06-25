@@ -1,5 +1,5 @@
 import { Box, Grid, IconButton, Typography } from "@mui/material";
-import { DoencaCard, Section } from "../../components";
+import { DoencaCard, Section, Title } from "../../components";
 import "./index.css";
 import DoencaProvider from "../../context/doenca-cards";
 import { useState } from "react";
@@ -65,9 +65,7 @@ export const WhyTherapy = () => {
             alignItems={"center"}
             flexDirection={"column"}
           >
-            <Typography className="source-sans-3 title-especialidades">
-              Especialidades
-            </Typography>
+            <Title title="Especialidades" />
             <Typography
               className="poppins subtitle-especialidades"
               sx={{ fontSize: "40px !important" }}

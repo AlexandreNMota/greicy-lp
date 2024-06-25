@@ -1,5 +1,5 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
-import { Section } from "../../components";
+import { Section, Title } from "../../components";
 import anjo from "../../assets/greicy-anjo.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { StyledButton } from "../../components/UI/header/styles";
@@ -14,16 +14,7 @@ export const About = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          className="source-sans-3"
-          sx={{
-            color: "#44C6E9",
-            fontSize: "1rem",
-            fontWeight: "400 !important",
-          }}
-        >
-          Sobre mim
-        </Typography>
+        <Title title="Sobre mim" />
       </Box>
       <Grid container>
         <Grid

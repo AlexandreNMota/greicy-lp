@@ -5,7 +5,7 @@ import {
   Box,
   Typography,
 } from "@mui/material";
-import { Section } from "../../components";
+import { Section, Title } from "../../components";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const perguntasFrequentes = [
@@ -57,16 +57,7 @@ export const PerguntasFrequentes = () => {
           marginTop: "50px",
         }}
       >
-        <Typography
-          className="source-sans-3"
-          sx={{
-            color: "#44C6E9",
-            fontSize: "1rem",
-            fontWeight: "400 !important",
-          }}
-        >
-          Dúvidas
-        </Typography>
+        <Title title="Dúvidas" />
       </Box>
       <Box
         sx={{

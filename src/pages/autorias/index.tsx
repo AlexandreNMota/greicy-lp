@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { Section } from "../../components";
+import { Section, Title } from "../../components";
 import logo from "../../assets/produtos-logo.png";
 import bgWave from "../../assets/Our_People.png";
 import sign from "../../assets/sign.png";
@@ -27,16 +27,7 @@ export const Autorias = () => {
             alignItems: "center",
           }}
         >
-          <Typography
-            className="source-sans-3"
-            sx={{
-              fontSize: "1rem",
-              fontWeight: "400 !important",
-              color: "#44C6E9",
-            }}
-          >
-            Produtos
-          </Typography>
+          <Title title="Produtos" />
         </Box>
         <img
           src={logo}
