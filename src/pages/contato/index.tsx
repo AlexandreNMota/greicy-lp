@@ -4,14 +4,14 @@ import wpp from "../../assets/WhatsApp.png";
 import insta from "../../assets/Instagram.png";
 import face from "../../assets/Facebook.png";
 import email from "../../assets/At sign.png";
-
+import bg from "../../assets/Our_People.png";
 import letter from "../../assets/Vector.png";
 export const Contato = () => {
   return (
     <Section id="contato-section">
       <Box
         sx={{
-          backgroundColor: "#24496A",
+          backgroundImage: `url(${bg})`,
           width: "100%",
           height: "100%",
         }}
