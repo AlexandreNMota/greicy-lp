@@ -3,7 +3,6 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Typography,
 } from "@mui/material";
 import { BigText, Section, Title } from "../../components";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
