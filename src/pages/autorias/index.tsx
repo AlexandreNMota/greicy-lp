@@ -1,5 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import {
+  BigText,
+  CustomText,
   GridContainer,
   GridItem,
   ImageContainer,
@@ -12,6 +14,7 @@ import sign from "../../assets/sign.png";
 import GreicyModel from "../../assets/greicy-top-model.png";
 import bgWaveProdutos from "../../assets/bg-produtos-wave.png";
 import livros from "../../assets/livros.png";
+import { produtosDescription } from "../../constantes/description";
 export const Autorias = () => {
   return (
     <Section id="productos-section">
@@ -25,16 +28,7 @@ export const Autorias = () => {
           height: "100vh",
         }}
       >
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Title title="Produtos" />
-        </Box>
+        <Title title="Produtos" sx={{ width: "100%", textAlign: "center" }} />
         <ImageContainer src={logo} classe="logo-produtos" />
         <ImageContainer src={sign} classe="sign-produtos" />
         <GridContainer>
@@ -48,42 +42,17 @@ export const Autorias = () => {
                 width: "70%",
               }}
             >
-              <Box
+              <BigText
+                text="Autorias"
+                branco={true}
+                hasMarginBottom={true}
                 sx={{
                   width: "100%",
                   display: "flex",
                   justifyContent: "flex-start",
-                  marginBottom: "50px",
                 }}
-              >
-                <Typography
-                  className="poppins"
-                  sx={{
-                    color: "#fff",
-                    fontSize: "32px",
-                    fontWeight: "700 !important",
-                  }}
-                >
-                  Autorias
-                </Typography>
-              </Box>
-              <Typography
-                sx={{
-                  color: "#F5F5F5",
-                  fontSize: "16px",
-                  fontWeight: "100 !important",
-                  textAlign: "justify",
-                }}
-              >
-                A ideia em criar esses baralhos psicoterapêuticos foi para que o
-                coconhecimento relativo ao tema proposto em cada temática fosse
-                adquirido de forma dinâmica e flexível. São ferramentas
-                incríveis que vão mudar sua forma de pensar a respeito de tais
-                temas. Eles tem formato de livro em caixinha, contendo sumário,
-                manual de instruções de uso em QR Code, e muita psicoeducação
-                com estratégias de ação. Podem ser utilizados individualmente ou
-                em set terapêutico.
-              </Typography>
+              />
+              <CustomText text={produtosDescription} classe="product-desc" />
             </Box>
             <Box
               sx={{
