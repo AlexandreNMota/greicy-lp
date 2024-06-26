@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { BigText, Pergunta, Section, Title } from "../../components";
 import { perguntasFrequentes } from "../../constantes/perguntasFrequentes";
 
 export const PerguntasFrequentes = () => {
+  const [expanded, setExpanded] = useState<false | number>(0);
   return (
     <Section id="duvidas-section">
       <Title
@@ -14,7 +16,13 @@ export const PerguntasFrequentes = () => {
         sx={{ width: "100%", textAlign: "center" }}
       />
       {perguntasFrequentes.map((item, i) => (
-        <Pergunta key={i} item={item} />
+        <Pergunta
+          key={i}
+          item={item}
+          i={i}
+          expanded={expanded}
+          setExpanded={setExpanded}
+        />
       ))}
     </Section>
   );

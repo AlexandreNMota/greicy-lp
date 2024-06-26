@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { StyledAppBarProps, StyledHeaderProps } from "./types";
 import { AppBar, Button, IconButton } from "@mui/material";
+import { motion } from "framer-motion";
 
 export const StyledHeader = styled("div")(
   ({ section, dimensions }: StyledHeaderProps) => {
@@ -31,6 +32,8 @@ export const StyledButton = styled(Button)(({}) => {
     },
   };
 });
+
+export const MotionButton = motion(StyledButton);
 
 export const StyledAppBar = styled(AppBar)(({}: StyledAppBarProps) => {
   return {

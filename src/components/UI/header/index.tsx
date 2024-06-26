@@ -1,6 +1,11 @@
 import { FC, useState } from "react";
 import { HeaderProps } from "./types";
-import { StyledAppBar, StyledButton, StyledHeader } from "./styles";
+import {
+  MotionButton,
+  StyledAppBar,
+  StyledButton,
+  StyledHeader,
+} from "./styles";
 import useAppContext from "../../../context/app/useAppContext";
 import { Navbar } from "./navbar";
 import { Box, Button, CssBaseline, IconButton, Toolbar } from "@mui/material";
@@ -83,14 +88,21 @@ export const Header: FC<HeaderProps> = ({ section, ...props }) => {
             </Box>
             <Box sx={{ flexGrow: 1 }} />
             {!isMobile && (
-              <StyledButton
+              // <StyledButton
+              // className="poppins"
+              // onClick={() => {}}
+              // startIcon={<WhatsAppIcon />}
+              // disableRipple
+              // >
+              <MotionButton
                 className="poppins"
                 onClick={() => {}}
                 startIcon={<WhatsAppIcon />}
                 disableRipple
+                whileTap={{ scale: 0.85 }}
               >
                 Agendar Consulta
-              </StyledButton>
+              </MotionButton>
             )}
             <IconButton
               color="inherit"
