@@ -1,0 +1,16 @@
+.accordion-custom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.accordion-summary-custom {
+  color: #2976d2;
+  font-weight: 700 !important;
+}
+
+.accordion-details-custom {
+  color: #00296d;
+  font-weight: 400 !important;
+  font-size: 16px;
+}

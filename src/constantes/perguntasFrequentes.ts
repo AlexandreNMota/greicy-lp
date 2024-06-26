@@ -1,4 +1,4 @@
-type PerguntaType = {
+export type PerguntaType = {
   title: string;
   resposta: string;
 };
