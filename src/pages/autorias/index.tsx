@@ -54,15 +54,7 @@ export const Autorias = () => {
               />
               <CustomText text={produtosDescription} classe="product-desc" />
             </Box>
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <ImageContainer src={livros} classe="livros-produtos" />
-            </Box>
+            <ImageContainer src={livros} classe="livros-produtos" />
             <Box
               sx={{
                 width: "100%",
