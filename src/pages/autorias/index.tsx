@@ -1,10 +1,11 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import {
   BigText,
   CustomText,
   GridContainer,
   GridItem,
   ImageContainer,
+  SaibaMaisButton,
   Section,
   Title,
 } from "../../components";
@@ -62,25 +63,7 @@ export const Autorias = () => {
                 justifyContent: "flex-end",
               }}
             >
-              <Button
-                variant="contained"
-                sx={{
-                  position: "relative",
-                  bottom: "50%",
-                  zIndex: "2",
-                  backgroundColor: "#297A40",
-                  boxShadow: "#04531A 0px 4px 4px",
-                  borderRadius: "10px",
-                  padding: "10px",
-                  "&:hover": {
-                    backgroundColor: "green",
-                  },
-                }}
-              >
-                <Typography className="poppins" sx={{ fontSize: "14px" }}>
-                  Saiba Mais {">>"}
-                </Typography>
-              </Button>
+              <SaibaMaisButton onClick={() => {}} />
             </Box>
           </GridItem>
           <GridItem xs={6} flexStart={true}>

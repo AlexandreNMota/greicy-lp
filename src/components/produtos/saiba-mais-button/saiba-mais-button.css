@@ -1,0 +1,15 @@
+.saiba-mais-button {
+  position: relative;
+  bottom: 50%;
+  z-index: 2;
+  background-color: #297a40;
+  box-shadow: #04531a 0px 4px 4px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.saiba-mais-button:hover {
+  background-color: green;
+}
+.saiba-mais-text {
+  font-size: 14px;
+}
