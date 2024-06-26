@@ -16,6 +16,7 @@ import GreicyModel from "../../assets/greicy-top-model.png";
 import bgWaveProdutos from "../../assets/bg-produtos-wave.png";
 import livros from "../../assets/livros.png";
 import { produtosDescription } from "../../constantes/description";
+import "./autorias.css";
 export const Autorias = () => {
   return (
     <Section id="productos-section">
@@ -34,15 +35,7 @@ export const Autorias = () => {
         <ImageContainer src={sign} classe="sign-produtos" />
         <GridContainer>
           <GridItem xs={6} flexAround={true} directionFlex="column">
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "70%",
-              }}
-            >
+            <Box className="box-grid-1">
               <BigText
                 text="Autorias"
                 branco={true}
@@ -63,7 +56,7 @@ export const Autorias = () => {
                 justifyContent: "flex-end",
               }}
             >
-              <SaibaMaisButton onClick={() => {}} />
+              <SaibaMaisButton />
             </Box>
           </GridItem>
           <GridItem xs={6} flexStart={true}>
