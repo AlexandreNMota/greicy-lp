@@ -5,6 +5,8 @@ import {
   GridContainer,
   GridItem,
   ImageContainer,
+  ProdutosDesktop,
+  ProdutosMobile,
   SaibaMaisButton,
   Section,
   Title,
@@ -15,9 +17,12 @@ import sign from "../../assets/sign.png";
 import GreicyModel from "../../assets/greicy-top-model.png";
 import bgWaveProdutos from "../../assets/bg-produtos-wave.png";
 import livros from "../../assets/livros.png";
+import greicyMobileProdutos from "../../assets/greicy-mobile-produtos.png";
 import { produtosDescription } from "../../constantes/description";
 import "./autorias.css";
+import useAppContext from "../../context/app/useAppContext";
 export const Autorias = () => {
+  const { isMobile } = useAppContext();
   return (
     <Section id="productos-section">
       <Box
@@ -27,43 +32,11 @@ export const Autorias = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           width: "100vw",
-          height: "100vh",
+          height: !isMobile ? "100vh" : "auto",
         }}
       >
-        <Title title="Produtos" sx={{ width: "100%", textAlign: "center" }} />
-        <ImageContainer src={logo} classe="logo-produtos" />
-        <ImageContainer src={sign} classe="sign-produtos" />
-        <GridContainer>
-          <GridItem xs={6} flexAround={true} directionFlex="column">
-            <Box className="box-grid-1">
-              <BigText
-                text="Autorias"
-                branco={true}
-                hasMarginBottom={true}
-                sx={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "flex-start",
-                }}
-              />
-              <CustomText text={produtosDescription} classe="product-desc" />
-            </Box>
-            <ImageContainer src={livros} classe="livros-produtos" />
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <SaibaMaisButton />
-            </Box>
-          </GridItem>
-          <GridItem xs={6} flexStart={true}>
-            <ImageContainer src={GreicyModel} classe="greicy-model-produtos" />
-          </GridItem>
-        </GridContainer>
-        <ImageContainer src={bgWaveProdutos} classe="bg-wave-produtos" />
+        {!isMobile && <ProdutosDesktop />}
+        {isMobile && <ProdutosMobile />}
       </Box>
     </Section>
   );
