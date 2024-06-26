@@ -1,4 +1,10 @@
-import { FirstGrid, GridContainer, GridItem, Section } from "../../components";
+import {
+  FirstGrid,
+  GridContainer,
+  GridItem,
+  ImageContainer,
+  Section,
+} from "../../components";
 import desktop from "../../assets/Desktop.png";
 
 export const WhyItWorks = () => {
@@ -9,7 +15,7 @@ export const WhyItWorks = () => {
           <FirstGrid />
         </GridItem>
         <GridItem directionFlex="row" xs={6}>
-          <img src={desktop} width="600" height="391" />
+          <ImageContainer src={desktop} className="como-funciona-img" />
         </GridItem>
       </GridContainer>
     </Section>
