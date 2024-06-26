@@ -4,7 +4,6 @@ import { produtosDescription } from "../../../constantes/description";
 import { CustomText } from "../../about";
 import livros from "../../../assets/livros.png";
 import bgWaveProdutos from "../../../assets/bg-produtos-wave.png";
-import { Box } from "@mui/material";
 export const ProdutosMobile = () => {
   return (
     <>
@@ -16,16 +15,7 @@ export const ProdutosMobile = () => {
         classe="product-desc"
         sx={{ maxWidth: "80% !important", margin: "auto" }}
       />
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "50px",
-        }}
-      >
-        <ImageContainer src={livros} classe="livros-produtos" />
-      </Box>
+      <ImageContainer src={livros} classe="livros-produtos" />
       <ImageContainer src={bgWaveProdutos} classe="bg-wave-produtos" />
     </>
   );
