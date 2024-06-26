@@ -2,3 +2,41 @@
   width: 600px;
   height: 392px;
 }
+
+.anjo {
+  width: 600px;
+  height: 600px;
+}
+
+.logo-produtos {
+  position: absolute;
+  left: 45%;
+  width: 150px;
+}
+
+.sign-produtos {
+  position: relative;
+  left: 45%;
+  top: 15%;
+  width: 150px;
+}
+
+.livros-produtos {
+  width: 70%;
+  z-index: 2;
+}
+
+.greicy-model-produtos {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  top: -15%;
+  right: -20%;
+}
+.bg-wave-produtos {
+  position: relative;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}

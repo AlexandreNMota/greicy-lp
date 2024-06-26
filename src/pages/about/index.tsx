@@ -4,6 +4,7 @@ import {
   CustomText,
   GridContainer,
   GridItem,
+  ImageContainer,
   Section,
   Title,
 } from "../../components";
@@ -18,7 +19,7 @@ export const About = () => {
       <Title title="Sobre mim" sx={{ width: "100%", textAlign: "center" }} />
       <GridContainer>
         <GridItem directionFlex="column" flexStart={true} xs={6}>
-          <img src={anjo} width="400" height="400"></img>
+          <ImageContainer src={anjo} classe="anjo" />
           <StyledButton
             className="poppins"
             onClick={() => {}}

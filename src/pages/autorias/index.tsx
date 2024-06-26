@@ -1,5 +1,11 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { GridContainer, GridItem, Section, Title } from "../../components";
+import {
+  GridContainer,
+  GridItem,
+  ImageContainer,
+  Section,
+  Title,
+} from "../../components";
 import logo from "../../assets/produtos-logo.png";
 import bgWave from "../../assets/Our_People.png";
 import sign from "../../assets/sign.png";
@@ -29,19 +35,8 @@ export const Autorias = () => {
         >
           <Title title="Produtos" />
         </Box>
-        <img
-          src={logo}
-          style={{ position: "absolute", left: "45%", width: "150px" }}
-        />
-        <img
-          src={sign}
-          style={{
-            position: "relative",
-            left: "45%",
-            top: "15%",
-            width: "150px",
-          }}
-        />
+        <ImageContainer src={logo} classe="logo-produtos" />
+        <ImageContainer src={sign} classe="sign-produtos" />
         <GridContainer>
           <GridItem xs={6} flexAround={true} directionFlex="column">
             <Box
@@ -97,7 +92,7 @@ export const Autorias = () => {
                 justifyContent: "flex-end",
               }}
             >
-              <img src={livros} style={{ width: "70%", zIndex: 2 }} />
+              <ImageContainer src={livros} classe="livros-produtos" />
             </Box>
             <Box
               sx={{
@@ -128,28 +123,10 @@ export const Autorias = () => {
             </Box>
           </GridItem>
           <GridItem xs={6} flexStart={true}>
-            <img
-              src={GreicyModel}
-              style={{
-                width: "500px",
-                height: "600px",
-                position: "relative",
-                top: "-15%",
-                right: "-20%",
-              }}
-            />
+            <ImageContainer src={GreicyModel} classe="greicy-model-produtos" />
           </GridItem>
         </GridContainer>
-        <img
-          src={bgWaveProdutos}
-          style={{
-            position: "relative",
-            bottom: "35%",
-            left: 0,
-            width: "100%",
-            height: "200px",
-          }}
-        />
+        <ImageContainer src={bgWaveProdutos} classe="bg-wave-produtos" />
       </Box>
     </Section>
   );
