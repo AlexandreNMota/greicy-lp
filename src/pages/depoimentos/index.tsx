@@ -11,41 +11,8 @@ import { BigText, Section, Title } from "../../components";
 import { motion, useMotionValue, animate } from "framer-motion";
 import useMeasure from "react-use-measure";
 import { useEffect } from "react";
-
+import { tutorialSteps } from "../../constantes/depoimentos";
 const MotionStack = motion(Stack);
-
-const tutorialSteps = [
-  {
-    nome: "Matias Gomez",
-    stars: 4,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-  {
-    nome: "Maria Paz",
-    stars: 3,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-  {
-    nome: "Silvia Rios",
-    stars: 3,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-  {
-    nome: "Matias Gomez 2",
-    stars: 4,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-  {
-    nome: "Maria Paz 2",
-    stars: 3,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-  {
-    nome: "Silvia Rios 2",
-    stars: 3,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames.",
-  },
-];
 
 export const Depoimentos = () => {
   let [ref, { width }] = useMeasure();
@@ -100,7 +67,9 @@ export const Depoimentos = () => {
         {[...tutorialSteps].map((item, index) => (
           <Card
             key={index}
-            sx={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+            sx={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            }}
           >
             <CardActionArea>
               <Typography
