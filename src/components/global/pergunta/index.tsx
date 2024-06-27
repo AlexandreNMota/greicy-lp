@@ -35,21 +35,21 @@ export const Pergunta: FC<IPerguntaProps> = ({
         </AccordionSummary>
         <AnimatePresence initial={false}>
           {isOpen && ( // Condicional para renderizar o conteúdo apenas quando expandido
-            <motion.section
-              key="content"
-              initial="collapsed"
-              animate="open"
-              exit="collapsed"
-              variants={{
-                open: { opacity: 1, height: "auto", scale: 1.03 },
-                collapsed: { opacity: 0, height: 0 },
-              }}
-              transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
-            >
-              <AccordionDetails className="accordion-details-custom">
+            <AccordionDetails className="accordion-details-custom">
+              <motion.section
+                key="content"
+                initial="collapsed"
+                animate="open"
+                exit="collapsed"
+                variants={{
+                  open: { opacity: 1, height: "auto", scale: 1.03 },
+                  collapsed: { opacity: 0, height: 0 },
+                }}
+                transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+              >
                 {item.resposta}
-              </AccordionDetails>
-            </motion.section>
+              </motion.section>
+            </AccordionDetails>
           )}
         </AnimatePresence>
       </Accordion>

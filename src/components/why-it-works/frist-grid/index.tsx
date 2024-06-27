@@ -1,5 +1,5 @@
 import { BigText } from "../../global";
-import { StyledButton } from "../../UI/header/styles";
+import { MotionButton, StyledButton } from "../../UI/header/styles";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { StepTitle } from "../step-title";
 import { StepContent } from "../step-content";
@@ -16,15 +16,17 @@ export const FirstGrid = () => {
           <StepContent text={item.content} />
         </React.Fragment>
       ))}
-      <StyledButton
+
+      <MotionButton
         className="poppins"
         onClick={() => {}}
         startIcon={<WhatsAppIcon />}
         disableRipple
         sx={{ marginTop: "50px" }}
+        whileTap={{ scale: 0.85 }}
       >
         Agendar Consulta
-      </StyledButton>
+      </MotionButton>
     </>
   );
 };

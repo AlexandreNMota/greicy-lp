@@ -3,7 +3,7 @@ import { BigText, DoencaCard, Section, Title } from "../../components";
 import "./index.css";
 import DoencaProvider from "../../context/doenca-cards";
 import { useState } from "react";
-import { StyledButton } from "../../components/UI/header/styles";
+import { MotionButton, StyledButton } from "../../components/UI/header/styles";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -110,15 +110,16 @@ export const WhyTherapy = () => {
           alignItems: "center",
         }}
       >
-        <StyledButton
+        <MotionButton
           className="poppins"
           onClick={() => {}}
           startIcon={<WhatsAppIcon />}
           disableRipple
           sx={{ marginTop: "50px" }}
+          whileTap={{ scale: 0.85 }}
         >
           Agendar Consulta
-        </StyledButton>
+        </MotionButton>
       </div>
       <img
         src="images/Ellipse 36.png"
