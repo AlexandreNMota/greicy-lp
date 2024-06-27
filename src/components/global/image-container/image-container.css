@@ -52,48 +52,9 @@
 /* Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .como-funciona-img {
-    width: 100%;
-    height: auto;
-  }
-  .anjo {
-    width: 100%;
-    height: auto;
-  }
-  .logo-produtos {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-  }
-  .sign-produtos {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 10%;
-    width: 100px;
-  }
-  .livros-produtos {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .greicy-model-produtos {
-    width: 100%;
-    height: auto;
-    top: 0;
-    right: 0;
-  }
-  .bg-wave-produtos {
-    bottom: 0;
-    height: 150px;
-  }
-  .greicy-model-mobile {
-    height: auto;
-    top: 0;
-  }
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .como-funciona-img {
     width: 100%;
     height: auto;
@@ -114,8 +75,8 @@
     width: 120px;
   }
   .livros-produtos {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 10%;
   }
   .greicy-model-produtos {
     width: 90%;
@@ -130,6 +91,7 @@
   .greicy-model-mobile {
     height: auto;
     top: -2%;
+    margin-left: 20% !important;
   }
 }
 
