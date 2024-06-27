@@ -5,6 +5,7 @@ import insta from "../../assets/Instagram.png";
 import face from "../../assets/Facebook.png";
 import bg from "../../assets/Our_People.png";
 import letter from "../../assets/Vector.png";
+import "./contato.css";
 export const Contato = () => {
   return (
     <Section id="contato-section">
@@ -37,7 +38,8 @@ export const Contato = () => {
         </Box>
         <GridContainer spacing={2} hasPaddingBottom={true}>
           <GridItem
-            xs={6}
+            xs={12}
+            sm={6}
             directionFlex="column"
             flexStart={true}
             alignItemsStart={true}
@@ -73,16 +75,8 @@ export const Contato = () => {
               </Typography>
             </Box>
           </GridItem>
-          <GridItem unflex={true} xs={3}>
-            <ul
-              style={{
-                borderRadius: "15px",
-                width: "80%",
-                padding: "20px",
-                boxShadow: "#44C6E9 -4px -4px 4px",
-                height: "100%",
-              }}
-            >
+          <GridItem unflex={true} xs={6} sm={3}>
+            <ul className="ul-contato">
               <li
                 style={{
                   display: "flex",
@@ -137,20 +131,8 @@ export const Contato = () => {
               </li>
             </ul>
           </GridItem>
-          <GridItem unflex={true} xs={3}>
-            <ul
-              style={{
-                borderRadius: "15px",
-                width: "80%",
-                height: "100%",
-                padding: "20px",
-                boxShadow: "#44C6E9 4px 4px 4px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                justifyContent: "center",
-              }}
-            >
+          <GridItem unflex={true} xs={6} sm={3}>
+            <ul className="ul-contato-dados">
               <li
                 style={{
                   display: "flex",
@@ -161,7 +143,7 @@ export const Contato = () => {
               >
                 <img src={wpp} width={"30"} />
                 <Typography
-                  className="source-sans-3"
+                  className="source-sans-3 text-dados"
                   sx={{ color: "#fff", marginLeft: "5px" }}
                 >
                   (41) 99986-7867
@@ -203,7 +185,10 @@ export const Contato = () => {
                   }}
                 >
                   <img src={insta} width={"30"} />
-                  <Typography sx={{ color: "#fff", marginLeft: "5px" }}>
+                  <Typography
+                    sx={{ color: "#fff", marginLeft: "5px" }}
+                    className="source-sans-3"
+                  >
                     Instagram
                   </Typography>
                 </Box>
@@ -218,7 +203,10 @@ export const Contato = () => {
                 }}
               >
                 <img src={face} width={"30"} />
-                <Typography sx={{ color: "#fff", marginLeft: "5px" }}>
+                <Typography
+                  sx={{ color: "#fff", marginLeft: "5px" }}
+                  className="source-sans-3"
+                >
                   Facebook
                 </Typography>
               </li>
@@ -235,7 +223,7 @@ export const Contato = () => {
             padding: "20px !important",
           }}
         >
-          <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+          <Typography className="rodape-texto" sx={{ color: "#fff" }}>
             ©2024 Psicóloga Greicy Pais. Todos os direitos reservados. |
             Desenvolvido por{" "}
             <Link href="https://codecase.com.br/" sx={{ color: "#44C6E9" }}>

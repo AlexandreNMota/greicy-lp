@@ -1,0 +1,97 @@
+.ul-contato {
+  border-radius: 15px;
+  width: 80%;
+  padding: 20px;
+  box-shadow: #44c6e9 -4px -4px 4px;
+  height: 100%;
+}
+
+.ul-contato-dados {
+  border-radius: 15px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: #44c6e9 4px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ul-contato {
+  border-radius: 15px;
+  width: 80%;
+  padding: 20px;
+  box-shadow: #44c6e9 -4px -4px 4px;
+  height: 100%;
+  margin: auto; /* Centering horizontally */
+}
+
+.ul-contato-dados {
+  border-radius: 15px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: #44c6e9 4px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto; /* Centering horizontally */
+}
+
+.rodape-texto {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .ul-contato,
+  .ul-contato-dados {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+    scale: 0.8;
+    margin-top: 10px;
+  }
+  .source-sans-3 {
+    font-size: 12px !important;
+  }
+  .rodape-texto {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ul-contato,
+  .ul-contato-dados {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+    scale: 0.8;
+    margin-top: 10px;
+  }
+  .source-sans-3 {
+    font-size: 11px !important;
+  }
+  .rodape-texto {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ul-contato,
+  .ul-contato-dados {
+    width: 95%; /* Further adjust width for even smaller screens */
+    padding: 10px; /* Further adjust padding for even smaller screens */
+    scale: 0.8;
+    margin-top: 8px;
+  }
+  .source-sans-3 {
+    font-size: 12px !important;
+  }
+
+  .rodape-texto {
+    font-size: 8px !important;
+  }
+}

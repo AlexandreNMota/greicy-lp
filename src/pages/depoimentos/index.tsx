@@ -88,7 +88,7 @@ export const Depoimentos = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 5 }} // Duração aumentada para 1 segundo
+              transition={{ duration: 5 }}
             >
               <Stack direction="row" spacing={4}>
                 {item.step.map((subItem, index) => (
