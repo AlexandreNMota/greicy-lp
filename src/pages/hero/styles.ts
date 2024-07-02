@@ -6,5 +6,6 @@ export const CustomStyledSection = styled(StyledSection)(({ dimensions }) => {
   return {
     height: SECTIONHEIGHT,
     marginTop: dimensions.headerHeight,
+    // padding: "2rem",
   };
 });

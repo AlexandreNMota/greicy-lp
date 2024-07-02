@@ -1,225 +1,313 @@
 :root {
-    --eclipse42-width: calc(100vw * 0.45);
-    --eclipse43-width: calc(100vw * 0.44);
-    --greicyHome-width: calc(100vw * 0.192);
-    --logoHome-width: calc(100vw * 0.1);
+  --eclipse42-width: calc(100vw * 0.45);
+  --eclipse43-width: calc(100vw * 0.44);
+  --greicyHome-width: calc(100vw * 0.192);
+  --logoHome-width: calc(100vw * 0.1);
 
-    --eclipse48-width-mobile: calc(100vw * 1);
-    --eclipse49-width-mobile: calc(100vw * 0.8);
-    --greicyHome-width-mobile: calc(100vw * 0.6);
-    /* --logoHome-width-mobile: calc(100vw * 0.1); */
+  --eclipse48-width-mobile: calc(100vw * 1);
+  --eclipse49-width-mobile: calc(100vw * 0.8);
+  --greicyHome-width-mobile: calc(100vw * 0.6);
+  /* --logoHome-width-mobile: calc(100vw * 0.1); */
 }
 
 @font-face {
-    font-family: The Strength;
-    src: url('/fontes/The\ Strength.ttf');
+  font-family: The Strength;
+  src: url("/fontes/The\ Strength.ttf");
 }
 
 .eclipse42 {
-    position: absolute;
-    top: -84px;
-    right: 0;
-    /* width: 738.641px; */
-    width: var(--eclipse42-width);
-    /* left: 674px; */
+  position: absolute;
+  top: -84px;
+  right: 0;
+  /* width: 738.641px; */
+  width: var(--eclipse42-width);
+  /* left: 674px; */
 }
 
 .eclipse48-mobile {
-    position: absolute;
-    /* width: 738.641px; */
-    width: var(--eclipse48-width-mobile);
-    /* left: 674px; */
-    top: 27px;
+  position: absolute;
+  /* width: 738.641px; */
+  width: var(--eclipse48-width-mobile);
+  /* left: 674px; */
+  top: 27px;
 }
 
 .eclipse43 {
-    position: absolute;
-    top: -54px;
-    right: 0;
-    /* width: 717.938px; */
-    width: var(--eclipse43-width);
-    /* left: 716px; */
+  position: absolute;
+  top: -54px;
+  right: 0;
+  /* width: 717.938px; */
+  width: var(--eclipse43-width);
+  /* left: 716px; */
 }
 
 .eclipse49-mobile {
-    position: absolute;
-    /* width: 717.938px; */
-    width: var(--eclipse49-width-mobile);
-    /* left: 716px; */
-    top: 37px;
+  position: absolute;
+  /* width: 717.938px; */
+  width: var(--eclipse49-width-mobile);
+  /* left: 716px; */
+  top: 37px;
 }
 
 .greicyHome {
-    position: absolute;
-    right: 151px;
-    /* width: 268px; */
-    width: var(--greicyHome-width);
-    top: 50px;
+  position: absolute;
+  right: 151px;
+  /* width: 268px; */
+  width: var(--greicyHome-width);
+  top: 50px;
 }
 
 .div_homelogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 90px;
-    width: 137px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 90px;
+  width: 137px;
+  align-items: center;
 }
 
 .greicy_name {
-    color: black !important;
-    font-family: 'The Strength' !important;
-    font-size: 45px !important;
-    font-style: italic !important;
-    /* margin: 0 !important; */
-    margin-top: 10px !important;
-    display: inline-block !important;
-    line-height: 18px !important;
-    vertical-align: middle !important;
+  color: black !important;
+  font-family: "The Strength" !important;
+  font-size: 45px !important;
+  font-style: italic !important;
+  /* margin: 0 !important; */
+  margin-top: 10px !important;
+  display: inline-block !important;
+  line-height: 18px !important;
+  vertical-align: middle !important;
 }
 
 .greicyHome-mobile {
-    z-index: 999;
-    position: relative;
-    width: var(--greicyHome-width-mobile);
+  z-index: 999;
+  position: relative;
+  width: var(--greicyHome-width-mobile);
 }
 
 .logoHome {
-    /* width: 146px; */
-    width: var(--logoHome-width);
-    /* margin-left: 90px; */
+  /* width: 146px; */
+  width: var(--logoHome-width);
+  /* margin-left: 90px; */
 }
 
 .titleHome {
-    font-size: 3vw !important;
+  font-size: 3vw !important;
 }
 
 .subtitleHome {
-    font-size: 1vw !important;
+  font-size: 1vw !important;
 }
 
 .containerHome {
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
 /* Estilos para dispositivos minusculos (celulares) */
 @media (min-width: 345px) {
-    :root {
-        --eclipse48-width-mobile: calc(100vw * 1);
-        --eclipse49-width-mobile: calc(100vw * 0.8);
-        --greicyHome-width-mobile: calc(100vw * 0.6);
-    }
+  :root {
+    --eclipse48-width-mobile: calc(100vw * 1);
+    --eclipse49-width-mobile: calc(100vw * 0.8);
+    --greicyHome-width-mobile: calc(100vw * 0.6);
+  }
 
-    .titleHome {
-        font-size: 9vw !important;
-        /* ajuste para telas pequenas */
-    }
+  .titleHome {
+    font-size: 9vw !important;
+    /* ajuste para telas pequenas */
+  }
 
-    .subtitleHome {
-        font-size: 5vw !important;
-        /* ajuste para telas pequenas */
-    }
+  .subtitleHome {
+    font-size: 5vw !important;
+    /* ajuste para telas pequenas */
+  }
+}
+@media (min-width: 500px) {
+  :root {
+    --eclipse48-width-mobile: calc(100vw * 0.9);
+    --eclipse49-width-mobile: calc(100vw * 0.7);
+    --greicyHome-width-mobile: calc(100vw * 0.7);
+  }
+
+  .greicyHome-mobile {
+    top: -2vw;
+  }
+
+  .titleHome {
+    font-size: 9vw !important;
+    /* ajuste para telas pequenas */
+  }
+
+  .subtitleHome {
+    font-size: 5vw !important;
+    /* ajuste para telas pequenas */
+  }
 }
 
 /* Estilos para dispositivos pequenos (celulares) */
 @media (min-width: 576px) {
-    :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
-    }
+  :root {
+    --eclipse42-width: calc(100vw * 1);
+    --eclipse43-width: calc(100vw * 0.98);
+    --greicyHome-width: calc(100vw * 0.392);
+    --logoHome-width: calc(100vw * 0.15);
+  }
 
-    .titleHome {
-        font-size: 3vw !important;
-        /* ajuste para telas pequenas */
-    }
+  .eclipse42 {
+    top: 0 !important;
+    right: -50vw;
+  }
+  .eclipse43 {
+    top: 0 !important;
+    /* right: -200px; */
+    right: -50vw;
+  }
+  .greicyHome {
+    top: 150px;
+    right: 50px;
+  }
 
-    .subtitleHome {
-        font-size: 2.5vw !important;
-        /* ajuste para telas pequenas */
-    }
+  .titleHome {
+    font-size: 7vw !important;
+    /* ajuste para telas pequenas */
+  }
+
+  .subtitleHome {
+    font-size: 4vw !important;
+    /* ajuste para telas pequenas */
+  }
 }
 
 /* Estilos para dispositivos médios (tablets) */
 @media (min-width: 768px) {
-    :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
-    }
+  :root {
+    --eclipse42-width: calc(100vw * 0.72);
+    --eclipse43-width: calc(100vw * 0.71);
+    --greicyHome-width: calc(100vw * 0.35);
+    --logoHome-width: calc(100vw * 0.15);
+  }
+  .eclipse42 {
+    top: 0 !important;
+    right: -200px;
+  }
+  .eclipse43 {
+    top: 0 !important;
+    right: -200px;
+  }
+  .greicyHome {
+    top: 100px;
+    right: 50px;
+  }
 
-    .titleHome {
-        font-size: 2.5vw !important;
-        /* ajuste para telas médias */
-    }
+  .titleHome {
+    font-size: 4.5vw !important;
+    /* ajuste para telas médias */
+  }
 
-    .subtitleHome {
-        font-size: 2vw !important;
-        /* ajuste para telas médias */
-    }
+  .subtitleHome {
+    font-size: 2.1vw !important;
+    /* ajuste para telas médias */
+  }
 }
 
 /* Estilos para dispositivos grandes (desktops) */
 @media (min-width: 992px) {
-    :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
-    }
+  :root {
+    --eclipse42-width: calc(100vw * 0.55);
+    --eclipse43-width: calc(100vw * 0.54);
+    --greicyHome-width: calc(100vw * 0.292);
+    --logoHome-width: calc(100vw * 0.15);
+  }
+  .eclipse42 {
+    /* top: 50px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .eclipse43 {
+    /* top: 54px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .greicyHome {
+    top: 100px;
+  }
 
-    .titleHome {
-        font-size: 2vw !important;
-        /* ajuste para telas grandes */
-    }
+  .titleHome {
+    font-size: 4vw !important;
+    /* ajuste para telas grandes */
+  }
 
-    .subtitleHome {
-        font-size: 1.5vw !important;
-        /* ajuste para telas grandes */
-    }
+  .subtitleHome {
+    font-size: 1.5vw !important;
+    /* ajuste para telas grandes */
+  }
 }
 
 /* Estilos para dispositivos extra grandes (desktops grandes) */
 @media (min-width: 1200px) {
-    :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
-    }
+  :root {
+    --eclipse42-width: calc(100vw * 0.49);
+    --eclipse43-width: calc(100vw * 0.48);
+    --greicyHome-width: calc(100vw * 0.25);
+    --logoHome-width: calc(100vw * 0.1);
+  }
 
-    .titleHome {
-        font-size: 3.4vw !important;
-        /* ajuste para telas muito grandes */
-    }
+  .eclipse42 {
+    /* top: 30px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .eclipse43 {
+    /* top: 34px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .greicyHome {
+    right: 100px;
+    /* top: 200px; */
+  }
 
-    .subtitleHome {
-        font-size: 1vw !important;
-        /* ajuste para telas muito grandes */
-    }
+  .titleHome {
+    font-size: 3.4vw !important;
+    /* ajuste para telas muito grandes */
+  }
+
+  .subtitleHome {
+    font-size: 1.5vw !important;
+    /* ajuste para telas muito grandes */
+  }
 }
 
 /* Estilos para dispositivos ultra grandes (monitores grandes) */
 @media (min-width: 1600px) {
-    :root {
-        --eclipse42-width: calc(100vw * 0.45);
-        --eclipse43-width: calc(100vw * 0.44);
-        --greicyHome-width: calc(100vw * 0.192);
-        --logoHome-width: calc(100vw * 0.1);
-    }
+  :root {
+    --eclipse42-width: calc(100vw * 0.37);
+    --eclipse43-width: calc(100vw * 0.36);
+    --greicyHome-width: calc(100vw * 0.192);
+    --logoHome-width: calc(100vw * 0.1);
+  }
 
-    .titleHome {
-        font-size: 1.5vw !important;
-        /* ajuste para telas muito grandes */
-    }
+  .eclipse42 {
+    /* top: 30px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .eclipse43 {
+    /* top: 34px; */
+    top: 0 !important;
+    right: 0;
+  }
+  .greicyHome {
+    top: 80px;
+  }
 
-    .subtitleHome {
-        font-size: 1.2vw !important;
-        /* ajuste para telas muito grandes */
-    }
+  .titleHome {
+    font-size: 4vw !important;
+    /* ajuste para telas muito grandes */
+  }
 
+  .subtitleHome {
+    font-size: 1vw !important;
+    /* ajuste para telas muito grandes */
+  }
 }
