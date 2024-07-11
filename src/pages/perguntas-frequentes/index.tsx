@@ -3,7 +3,7 @@ import { BigText, Pergunta, Section, Title } from "../../components";
 import { perguntasFrequentes } from "../../constantes/perguntasFrequentes";
 
 export const PerguntasFrequentes = () => {
-  const [expanded, setExpanded] = useState<false | number>(0);
+  const [expanded, setExpanded] = useState<false | number>(false);
   return (
     <Section id="duvidas-section">
       <Title

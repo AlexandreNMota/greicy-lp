@@ -9,8 +9,8 @@ export const CustomText: FC<ICustomTextProps> = ({
   ...props
 }: ICustomTextProps) => {
   const className = clsx({
-    "source-sans-3": true,
-    "custom-text": classe !== "",
+    "source-sans-3": classe != "",
+    "custom-text": classe != "",
     [classe]: classe,
   });
   return (

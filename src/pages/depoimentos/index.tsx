@@ -69,6 +69,7 @@ export const Depoimentos = () => {
             key={index}
             sx={{
               boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              height: "100px",
             }}
           >
             <CardActionArea>
@@ -83,7 +84,7 @@ export const Depoimentos = () => {
                   width: "100% !important",
                   justifyContent: "space-around !important",
                   borderRadius: "20px !important",
-                  padding: "20px !important",
+                  padding: "5px !important",
                 }}
               >
                 {item.nome}

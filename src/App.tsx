@@ -8,6 +8,7 @@ import {
   PerguntasFrequentes,
   WhyItWorks,
   WhyTherapy,
+  WhyTherapyRefactor,
 } from "./pages";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <>
       <Header section={"hero"} />
       <Hero />
-      <WhyTherapy />
+      <WhyTherapyRefactor />
       <WhyItWorks />
       <About />
       <Autorias />

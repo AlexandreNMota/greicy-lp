@@ -34,3 +34,8 @@
 .padded-left {
   padding-left: 10% !important;
 }
+
+.is-about {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}

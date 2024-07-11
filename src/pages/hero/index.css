@@ -104,6 +104,10 @@
   min-height: fill-available;
 }
 
+.saiba-mais-text {
+  font-size: 0.75vw !important;
+}
+
 /* Estilos para dispositivos minusculos (celulares) */
 @media (min-width: 345px) {
   :root {
@@ -142,6 +146,9 @@
     font-size: 5vw !important;
     /* ajuste para telas pequenas */
   }
+  .saiba-mais-text {
+    font-size: 2.5vw !important;
+  }
 }
 
 /* Estilos para dispositivos pequenos (celulares) */
@@ -176,6 +183,47 @@
     font-size: 4vw !important;
     /* ajuste para telas pequenas */
   }
+
+  .saiba-mais-text {
+    font-size: 2.5vw !important;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    --eclipse42-width: calc(100vw * 1);
+    --eclipse43-width: calc(100vw * 0.98);
+    --greicyHome-width: calc(100vw * 0.392);
+    --logoHome-width: calc(100vw * 0.15);
+  }
+
+  .eclipse42 {
+    top: 0 !important;
+    right: -50vw;
+  }
+  .eclipse43 {
+    top: 0 !important;
+    /* right: -200px; */
+    right: -50vw;
+  }
+  .greicyHome {
+    top: 150px;
+    right: 50px;
+  }
+
+  .titleHome {
+    font-size: 5vw !important;
+    /* ajuste para telas pequenas */
+  }
+
+  .subtitleHome {
+    font-size: 2vw !important;
+    /* ajuste para telas pequenas */
+  }
+
+  .saiba-mais-text {
+    font-size: 1.75vw !important;
+  }
 }
 
 /* Estilos para dispositivos médios (tablets) */
@@ -207,6 +255,10 @@
   .subtitleHome {
     font-size: 2.1vw !important;
     /* ajuste para telas médias */
+  }
+
+  .saiba-mais-text {
+    font-size: 1.75vw !important;
   }
 }
 
@@ -240,6 +292,9 @@
   .subtitleHome {
     font-size: 1.5vw !important;
     /* ajuste para telas grandes */
+  }
+  .saiba-mais-text {
+    font-size: 1.5vw !important;
   }
 }
 
@@ -276,6 +331,10 @@
     font-size: 1.5vw !important;
     /* ajuste para telas muito grandes */
   }
+
+  .saiba-mais-text {
+    font-size: 1vw !important;
+  }
 }
 
 /* Estilos para dispositivos ultra grandes (monitores grandes) */
@@ -309,5 +368,9 @@
   .subtitleHome {
     font-size: 1vw !important;
     /* ajuste para telas muito grandes */
+  }
+
+  .saiba-mais-text {
+    font-size: 0.75vw !important;
   }
 }

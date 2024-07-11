@@ -58,3 +58,7 @@ body {
     overflow-x: visible;
   }
 }
+
+#sobre-section {
+  background-color: #f1f8ff;
+}

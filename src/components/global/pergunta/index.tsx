@@ -19,7 +19,15 @@ export const Pergunta: FC<IPerguntaProps> = ({
 }: IPerguntaProps) => {
   const isOpen = i === expanded;
   return (
-    <Box {...props} sx={{ width: "80%", margin: "auto" }}>
+    <Box
+      {...props}
+      sx={{
+        width: "100%",
+        margin: "auto",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+      }}
+    >
       <Accordion
         className="accordion-custom"
         expanded={isOpen}
