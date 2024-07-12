@@ -42,7 +42,8 @@ export const Contato = () => {
         <GridContainer spacing={2} hasPaddingBottom={true}>
           <GridItem
             xs={12}
-            sm={6}
+            sm={12}
+            md={6}
             directionFlex="column"
             flexStart={true}
             alignItemsStart={true}
@@ -70,15 +71,29 @@ export const Contato = () => {
                 justifyContent: "flex-start",
               }}
             >
-              <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+              <Typography
+                className="endereco-text"
+                sx={{
+                  fontSize: {
+                    xs: "1rem",
+                  },
+                }}
+              >
                 Rua Exemplo, 123, Bairro das Amostras, Cidade Modelo
               </Typography>
-              <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+              <Typography
+                className="endereco-text"
+                sx={{
+                  fontSize: {
+                    xs: "1rem",
+                  },
+                }}
+              >
                 Estado, CEP 00000-000
               </Typography>
             </Box>
           </GridItem>
-          <GridItem unflex={true} xs={6} sm={3}>
+          <GridItem unflex={true} xs={6} sm={6} md={3}>
             <ul className="ul-contato">
               <li
                 style={{
@@ -102,7 +117,14 @@ export const Contato = () => {
                   marginTop: "10px",
                 }}
               >
-                <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+                <Typography
+                  className="endereco-text"
+                  sx={{
+                    fontSize: {
+                      xs: "1rem",
+                    },
+                  }}
+                >
                   Segunda a Sexta: 9h às 18h
                 </Typography>
               </li>
@@ -115,7 +137,14 @@ export const Contato = () => {
                   marginTop: "10px",
                 }}
               >
-                <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+                <Typography
+                  className="endereco-text"
+                  sx={{
+                    fontSize: {
+                      xs: "1rem",
+                    },
+                  }}
+                >
                   Sábado: 9h às 14h
                 </Typography>
               </li>
@@ -128,13 +157,20 @@ export const Contato = () => {
                   marginTop: "10px",
                 }}
               >
-                <Typography className="source-sans-3" sx={{ color: "#fff" }}>
+                <Typography
+                  className="endereco-text"
+                  sx={{
+                    fontSize: {
+                      xs: "1rem",
+                    },
+                  }}
+                >
                   Domingo: Fechado
                 </Typography>
               </li>
             </ul>
           </GridItem>
-          <GridItem unflex={true} xs={6} sm={3}>
+          <GridItem unflex={true} xs={6} sm={6} md={3}>
             <ul className="ul-contato-dados">
               <li
                 style={{
@@ -146,8 +182,14 @@ export const Contato = () => {
               >
                 <img src={wpp} width={"30"} />
                 <Typography
-                  className="source-sans-3 text-dados"
-                  sx={{ color: "#fff", marginLeft: "5px" }}
+                  className="endereco-text"
+                  sx={{
+                    color: "#fff",
+                    marginLeft: "5px",
+                    fontSize: {
+                      xs: "1rem",
+                    },
+                  }}
                 >
                   (41) 99986-7867
                 </Typography>
@@ -163,8 +205,16 @@ export const Contato = () => {
               >
                 <img src={letter} width={"30"} />
                 <Typography
-                  className="source-sans-3"
-                  sx={{ color: "#fff", marginLeft: "5px" }}
+                  className="endereco-text"
+                  sx={{
+                    color: "#fff",
+                    marginLeft: "5px",
+                    fontSize: {
+                      xs: "1rem",
+                      md: "0.75rem",
+                      lg: "1rem",
+                    },
+                  }}
                 >
                   exemplo@empresa.com
                 </Typography>
@@ -189,8 +239,14 @@ export const Contato = () => {
                 >
                   <img src={insta} width={"30"} />
                   <Typography
-                    sx={{ color: "#fff", marginLeft: "5px" }}
-                    className="source-sans-3"
+                    sx={{
+                      color: "#fff",
+                      marginLeft: "5px",
+                      fontSize: {
+                        xs: "1rem",
+                      },
+                    }}
+                    className="endereco-text"
                   >
                     Instagram
                   </Typography>
@@ -207,8 +263,14 @@ export const Contato = () => {
               >
                 <img src={face} width={"30"} />
                 <Typography
-                  sx={{ color: "#fff", marginLeft: "5px" }}
-                  className="source-sans-3"
+                  sx={{
+                    color: "#fff",
+                    marginLeft: "5px",
+                    fontSize: {
+                      xs: "1rem",
+                    },
+                  }}
+                  className="endereco-text"
                 >
                   Facebook
                 </Typography>
@@ -226,7 +288,16 @@ export const Contato = () => {
             padding: "20px !important",
           }}
         >
-          <Typography className="rodape-texto" sx={{ color: "#fff" }}>
+          <Typography
+            className="endereco-text"
+            sx={{
+              color: "#fff",
+              fontSize: {
+                xs: "0.75rem",
+                sm: "1rem",
+              },
+            }}
+          >
             ©2024 Psicóloga Greicy Pais. Todos os direitos reservados. |
             Desenvolvido por{" "}
             <Link href="https://codecase.com.br/" sx={{ color: "#44C6E9" }}>
