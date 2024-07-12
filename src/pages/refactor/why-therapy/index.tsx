@@ -1,7 +1,10 @@
 import {
   Box,
+  Button,
   Card,
+  CardActions,
   CardContent,
+  CardMedia,
   Grid,
   IconButton,
   Typography,
@@ -11,43 +14,40 @@ import "./index.css";
 import DoencaProvider from "../../../context/doenca-cards";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { cards } from "../../../constantes/doencaCards";
 import { motion } from "framer-motion";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import useAppContext from "../../../context/app/useAppContext";
 
+const cardVariants = {
+  enter: { opacity: 0, x: 100 },
+  center: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -100 },
+};
+
 export const WhyTherapyRefactor = () => {
   const { isMobile } = useAppContext();
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(0);
+  const [blockCards, setBlockCards] = useState(cards.slice(0, 4));
+  const [toggle, setToggle] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStep((prevStep) => (prevStep + 1) % cards.length);
+    }, 5000);
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => {
-      if (step === 1) setStep(2);
-    },
-    onSwipedRight: () => {
-      if (step === 2) setStep(1);
-    },
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
+    return () => clearInterval(interval);
+  }, []);
 
-  const renderCards = () => {
-    const limitedCards = step === 1 ? cards.slice(0, 4) : cards.slice(4);
-    return limitedCards.map((card, id) => (
-      <Grid item xs={6} key={id} sx={{ zIndex: 2 }}>
-        <DoencaProvider>
-          <DoencaCard
-            title={card.title}
-            content={card.content}
-            video={card.video}
-            thumb={card.thumb}
-          />
-        </DoencaProvider>
-      </Grid>
-    ));
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBlockCards(toggle ? cards.slice(0, 4) : cards.slice(4, 8));
+      setToggle((prevToggle) => !prevToggle);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [toggle]);
 
   return (
     <Section id="especialidades-section">
@@ -94,47 +94,129 @@ export const WhyTherapyRefactor = () => {
             </Grid>
           </Grid>
         </div>
-        {/* <div className="card-container" {...handlers}>
-          <Grid container spacing={2}>
-            <Grid item xs={0.5} sx={{ display: "flex", alignItems: "center" }}>
-              {step === 2 && (
-                <IconButton onClick={() => setStep(step - 1)}>
-                  <ChevronLeftIcon sx={{ color: "#00296d" }} />
-                </IconButton>
-              )}
-            </Grid>
-            <Grid item xs={11} sx={{ marginTop: "20px" }}>
-              <Grid container spacing={2}>
-                {renderCards()}
-              </Grid>
-            </Grid>
-            <Grid item xs={0.5} sx={{ display: "flex", alignItems: "center" }}>
-              {step === 1 && (
-                <IconButton onClick={() => setStep(step + 1)}>
-                  <ChevronRightIcon sx={{ color: "#00296d" }} />
-                </IconButton>
-              )}
-            </Grid>
-          </Grid>
-        </div> */}
+
         {isMobile && (
           <div className="card-container">
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <div className="image-container">
-                  <img src={cards[0].thumb} />
-                  <IconButton
-                    className="play-button"
-                    onClick={() => {}}
+                <motion.div
+                  key={step}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  variants={cardVariants}
+                  transition={{ duration: 1 }}
+                >
+                  <Card
                     sx={{
-                      backgroundColor: "rgba(0, 0, 0, 0.5)",
-                      color: "#fff",
+                      width: 345,
+                      minHeight: 500,
+                      height: 500,
+                      maxHeight: 500,
+                      // border: "1px solid #000",
+
+                      "&.MuiPaper-root": {
+                        boxShadow:
+                          " rgba(0, 0, 0, 0.35) 0px 5px 15px !important",
+                      },
                     }}
                   >
-                    <PlayArrowIcon fontSize="large" />
-                  </IconButton>
-                </div>
+                    <img src={cards[step].thumb} width={345} height={140} />
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        className="poppins"
+                        sx={{ color: "#2977d5" }}
+                      >
+                        {cards[step].title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        className="source-sans-3"
+                        sx={{
+                          fontSize: {
+                            xs: "1rem !important",
+                          },
+                        }}
+                      >
+                        {cards[step].content.length > 300
+                          ? cards[step].content.slice(0, 300) + "..."
+                          : cards[step].content}
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button size="small" sx={{ zIndex: 999 }}>
+                        Saiba Mais
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </motion.div>
               </Grid>
+            </Grid>
+          </div>
+        )}
+        {!isMobile && (
+          <div className="card-container">
+            <Grid container>
+              <Grid item xs={1}></Grid>
+              <Grid item xs={10}>
+                <Grid container spacing={2}>
+                  {blockCards.map((card, index) => (
+                    <Grid item xs={12} sm={6} md={6} lg={6} xl={3} key={index}>
+                      <Card
+                        sx={{
+                          width: 345,
+                          minHeight: 500,
+                          height: 500,
+                          maxHeight: 500,
+                          // border: "1px solid #000",
+
+                          "&.MuiPaper-root": {
+                            boxShadow:
+                              " rgba(0, 0, 0, 0.35) 0px 5px 15px !important",
+                          },
+                        }}
+                      >
+                        <img src={card.thumb} width={345} height={140} />
+                        <CardContent>
+                          <Typography
+                            gutterBottom
+                            variant="h5"
+                            component="div"
+                            className="poppins"
+                            sx={{ color: "#2977d5" }}
+                          >
+                            {card.title}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            color="text.secondary"
+                            className="source-sans-3"
+                            sx={{
+                              fontSize: {
+                                xs: "1rem !important",
+                              },
+                            }}
+                          >
+                            {card.content.length > 200
+                              ? card.content.slice(0, 200) + "..."
+                              : card.content}
+                          </Typography>
+                        </CardContent>
+                        <CardActions>
+                          <Button size="small" sx={{ zIndex: 999 }}>
+                            Saiba Mais
+                          </Button>
+                        </CardActions>
+                      </Card>
+                    </Grid>
+                  ))}
+                </Grid>
+              </Grid>
+              <Grid item xs={1}></Grid>
             </Grid>
           </div>
         )}
