@@ -50,7 +50,7 @@ export const Pergunta: FC<IPerguntaProps> = ({
                 animate="open"
                 exit="collapsed"
                 variants={{
-                  open: { opacity: 1, height: "auto", scale: 1.03 },
+                  open: { opacity: 1, height: "auto", scale: 1 },
                   collapsed: { opacity: 0, height: 0 },
                 }}
                 transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
