@@ -1,4 +1,11 @@
-import { Box, Grid, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import { BigText, DoencaCard, Section, Title } from "../../../components";
 import "./index.css";
 import DoencaProvider from "../../../context/doenca-cards";
@@ -7,8 +14,12 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { cards } from "../../../constantes/doencaCards";
+import { motion } from "framer-motion";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import useAppContext from "../../../context/app/useAppContext";
 
 export const WhyTherapyRefactor = () => {
+  const { isMobile } = useAppContext();
   const [step, setStep] = useState(1);
 
   const handlers = useSwipeable({
@@ -106,6 +117,28 @@ export const WhyTherapyRefactor = () => {
             </Grid>
           </Grid>
         </div> */}
+        {isMobile && (
+          <div className="card-container">
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <div className="image-container">
+                  <img src={cards[0].thumb} />
+                  <IconButton
+                    className="play-button"
+                    onClick={() => {}}
+                    sx={{
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
+                      color: "#fff",
+                    }}
+                  >
+                    <PlayArrowIcon fontSize="large" />
+                  </IconButton>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
+        )}
+
         <img
           src="images/Ellipse 36.png"
           className="eclipse36 rotated"
