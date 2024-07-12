@@ -4,8 +4,8 @@
 }
 
 .anjo {
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
 }
 
 .logo-produtos {
@@ -102,7 +102,7 @@
     height: auto;
   }
   .anjo {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
   .logo-produtos {
@@ -141,7 +141,7 @@
     height: auto;
   }
   .anjo {
-    width: 70%;
+    width: 100%;
     height: auto;
   }
   .logo-produtos {

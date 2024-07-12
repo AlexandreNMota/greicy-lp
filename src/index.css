@@ -62,3 +62,27 @@ body {
 #sobre-section {
   background-color: #f1f8ff;
 }
+#como-funciona-section {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #fdfdff,
+    #fafbff,
+    #f6f9ff,
+    #f1f8ff
+  );
+}
+
+.about-greicy-text {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.subtitle2-especialidades {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}

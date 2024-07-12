@@ -5,3 +5,38 @@
   font-style: normal !important;
   color: #5ec2ed;
 }
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 3vw !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 3.5vw !important;
+  }
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25vw !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 2vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 1.5vw !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title {
+    font-size: 1.25vw !important;
+  }
+}

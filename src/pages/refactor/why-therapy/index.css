@@ -48,9 +48,17 @@
   font-size: 35px !important;
 }
 
+.subtitle2-especialidades {
+  font-size: 1vw !important;
+}
+
 @media (min-width: 500px) {
   #especialidades-section {
     margin-top: 10px; /* Para garantir que a seção ocupe a altura total da tela */
+  }
+
+  .subtitle2-especialidades {
+    font-size: 3vw !important;
   }
 
   .rotated {
@@ -62,15 +70,36 @@
   #especialidades-section {
     margin-top: 6vw !important; /* Para garantir que a seção ocupe a altura total da tela */
   }
+  .subtitle2-especialidades {
+    font-size: 2.5vw !important;
+  }
 }
 
 @media (min-width: 768px) {
   #especialidades-section {
     margin-top: 1vw !important; /* Para garantir que a seção ocupe a altura total da tela */
   }
+  .subtitle2-especialidades {
+    font-size: 2vw !important;
+  }
 }
 @media (min-width: 992px) {
   #especialidades-section {
     margin-top: 6vw !important; /* Para garantir que a seção ocupe a altura total da tela */
+  }
+  .subtitle2-especialidades {
+    font-size: 1.5vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subtitle2-especialidades {
+    font-size: 1vw !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .subtitle2-especialidades {
+    font-size: 0.75vw !important;
   }
 }

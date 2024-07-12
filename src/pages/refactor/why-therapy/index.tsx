@@ -62,13 +62,18 @@ export const WhyTherapyRefactor = () => {
                 flexDirection={"column"}
               >
                 <Title title="Especialidades" />
-                <BigText text="Porque e quando buscar terapia?" marginTop={2} />
+                <BigText
+                  text="Porque e quando buscar terapia?"
+                  marginTop={2}
+                  sx={{ width: "100%", textAlign: "center" }}
+                />
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} marginTop={2}>
               <Typography
-                className="source-sans-3 subtitle2-especialidades"
+                className=" subtitle2-especialidades"
                 variant="subtitle1"
+                sx={{ width: "100%", textAlign: "center" }}
               >
                 Assim como cuidamos da nossa saúde física, é importante cuidar
                 da nossa saúde mental e emocional. Procurar a ajuda de uma
@@ -78,7 +83,7 @@ export const WhyTherapyRefactor = () => {
             </Grid>
           </Grid>
         </div>
-        <div className="card-container" {...handlers}>
+        {/* <div className="card-container" {...handlers}>
           <Grid container spacing={2}>
             <Grid item xs={0.5} sx={{ display: "flex", alignItems: "center" }}>
               {step === 2 && (
@@ -100,12 +105,11 @@ export const WhyTherapyRefactor = () => {
               )}
             </Grid>
           </Grid>
-        </div>
+        </div> */}
         <img
           src="images/Ellipse 36.png"
           className="eclipse36 rotated"
           alt="Ellipse"
-          //   style={{ position: "absolute", bottom: "-200px" }}
         />
       </div>
     </Section>

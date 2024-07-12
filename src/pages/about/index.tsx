@@ -24,7 +24,7 @@ export const About = () => {
       )}
 
       <GridContainer>
-        <GridItem directionFlex="column" flexStart={true} xs={12} md={6}>
+        <GridItem directionFlex="column" flexStart={isMobile} xs={12} md={6}>
           {!isMobile && <ImageContainer src={anjo} classe="anjo" />}
 
           {isMobile && <img src={teste} width="100%" />}
@@ -57,12 +57,25 @@ export const About = () => {
           {sobre.map((item, index) => (
             <React.Fragment key={index}>
               {/* <CustomText text={item.texto} classe="sobre-a-greicy" /> */}
-              <Typography className="source-sans-3">{item.texto}</Typography>
+              <Typography className="about-greicy-text">
+                {item.texto}
+              </Typography>
             </React.Fragment>
           ))}
           {!isMobile && (
             <Link sx={{ color: "#44C6E9", cursor: "pointer" }}>
-              <Typography className="source-sans-3" sx={{ fontSize: "14px" }}>
+              <Typography
+                // className="source-sans-3"
+                sx={{
+                  fontSize: {
+                    xs: "12px", // font-size for extra-small devices
+                    sm: "14px", // font-size for small devices
+                    md: "16px", // font-size for medium devices
+                    lg: "18px", // font-size for large devices
+                    xl: "20px", // font-size for extra-large devices
+                  },
+                }}
+              >
                 {"Currículo Completo>"}
               </Typography>
             </Link>
