@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import {
   BigText,
   GridContainer,
@@ -33,7 +33,21 @@ export const ProdutosDesktop = () => {
                 justifyContent: "flex-start",
               }}
             />
-            <CustomText text={produtosDescription} classe="product-desc" />
+            <Typography
+              className="product-desc-refactor"
+              sx={{
+                textAlign: "justify",
+                fontSize: {
+                  sm: ".75rem !important",
+                  md: "1rem !important",
+                  lg: "1.25rem !important",
+                  xl: "1.5rem !important",
+                },
+              }}
+            >
+              {produtosDescription}
+            </Typography>
+            {/* <CustomText text={produtosDescription} classe="product-desc" /> */}
           </Box>
           <ImageContainer src={livros} classe="livros-produtos" />
           <Box

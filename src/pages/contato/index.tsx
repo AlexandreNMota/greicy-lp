@@ -24,9 +24,10 @@ export const Contato = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marginBottom: "20px",
           }}
         >
-          <Typography
+          {/* <Typography
             className="poppins"
             sx={{
               textAlign: "initial",
@@ -36,7 +37,7 @@ export const Contato = () => {
             }}
           >
             Contato
-          </Typography>
+          </Typography> */}
         </Box>
         <GridContainer spacing={2} hasPaddingBottom={true}>
           <GridItem
