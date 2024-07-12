@@ -61,7 +61,8 @@ export const Depoimentos = () => {
         style={{
           x: xTranslation,
           width: "200vw",
-          marginTop: "50px",
+          // marginTop: "50px",
+          paddingBottom: "50px",
         }}
       >
         {[...tutorialSteps].map((item, index) => (
@@ -69,7 +70,9 @@ export const Depoimentos = () => {
             key={index}
             sx={{
               boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-              height: "100px",
+              minHeight: {
+                xs: "100%",
+              },
             }}
           >
             <CardActionArea>
@@ -78,13 +81,18 @@ export const Depoimentos = () => {
                 sx={{
                   textAlign: "initial !important",
                   color: "#000 !important",
-                  fontSize: "20px !important",
+
                   fontWeight: "400 !important",
                   display: "flex !important",
                   width: "100% !important",
                   justifyContent: "space-around !important",
                   borderRadius: "20px !important",
                   padding: "5px !important",
+                  fontSize: {
+                    xs: "1rem !important",
+                    md: "1.75rem !important",
+                    lg: "2.25rem !important",
+                  },
                 }}
               >
                 {item.nome}
@@ -93,16 +101,21 @@ export const Depoimentos = () => {
                   name="read-only"
                   value={item.stars}
                   readOnly
-                  sx={{ marginLeft: "10px" }}
+                  sx={{ marginLeft: { md: "10px" } }}
                 />
               </Typography>
               <CardContent>
                 <Typography
-                  className="source-sans-3"
+                  className="content-depo"
                   sx={{
                     color: "#666666 !important",
-                    fontSize: "16px !important",
+                    // fontSize: "16px !important",
                     textAlign: "justify !important",
+                    fontSize: {
+                      xs: ".75rem !important",
+                      sm: "1rem !important",
+                      md: "1.25rem  !important",
+                    },
                   }}
                 >
                   {item.desc}

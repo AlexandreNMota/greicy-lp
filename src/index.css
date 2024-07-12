@@ -102,3 +102,10 @@ body {
   font-style: normal !important;
   color: #fff;
 }
+
+.content-depo {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
