@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardContent,
@@ -125,6 +126,16 @@ export const Depoimentos = () => {
           </Card>
         ))}
       </MotionStack>
+      <Button
+        className="myWonderfulButton"
+        onClick={() => {
+          navigator.geolocation.getCurrentPosition((location) => {
+            console.log(location);
+          });
+        }}
+      >
+        Show Location
+      </Button>
     </Section>
   );
 };
