@@ -34,9 +34,9 @@ export const ProdutosDesktop = () => {
                                 textAlign: "justify",
                                 fontSize: {
                                     sm: "1rem !important",
-                                    md: "2rem !important",
-                                    lg: "1.25rem !important",
-                                    xl: "1.5rem !important",
+                                    md: "1.15rem !important",
+                                    lg: "1rem !important",
+                                    xl: "1rem !important",
                                 },
                             }}
                         >
