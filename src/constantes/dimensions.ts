@@ -1,3 +1,3 @@
 export const DIMENSIONS = {
-  headerHeight: "110px",
+  headerHeight: "60px",
 };

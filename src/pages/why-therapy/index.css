@@ -1,0 +1,32 @@
+.eclipse36 {
+  position: absolute;
+  width: 100%;
+}
+
+.title-especialidades {
+  color: #44c6e9;
+  font-weight: bold;
+}
+
+.subtitle-especialidades {
+  color: #00296d;
+  font-size: 35px !important;
+}
+
+.card-especialidades-video {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-especialidade {
+  width: 100%;
+}
+
+.card-title-especialidade {
+  color: #2977d5;
+  font-size: 35px !important;
+}

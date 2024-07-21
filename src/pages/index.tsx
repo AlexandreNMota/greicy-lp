@@ -6,3 +6,4 @@ export * from "./hero";
 export * from "./perguntas-frequentes";
 export * from "./why-it-works";
 export * from "./why-therapy";
+export * from "./refactor";

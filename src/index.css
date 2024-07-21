@@ -1,5 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  /* max-width: 100vw !important; */
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.source-sans-3-400 {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -500%);
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (min-width: 600px) {
+  * {
+    overflow-x: visible;
+  }
+}
+
+#sobre-section {
+  background-color: #f1f8ff;
+}
+#como-funciona-section {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #fdfdff,
+    #fafbff,
+    #f6f9ff,
+    #f1f8ff
+  );
+}
+
+.about-greicy-text {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.subtitle2-especialidades {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.product-desc-refactor {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  color: #fff;
+}
+
+.endereco-text {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  color: #fff;
+}
+
+.content-depo {
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
 }

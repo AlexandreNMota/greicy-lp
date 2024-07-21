@@ -1,0 +1,41 @@
+.grid-item-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-flex-start {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: center;
+}
+.grid-item-flex-around {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+}
+
+.grid-items-start {
+  align-items: flex-start !important;
+}
+
+.grid-item-column {
+  flex-direction: column !important;
+}
+
+.grid-item-row {
+  flex-direction: row !important;
+}
+
+.grid-padded {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.padded-left {
+  padding-left: 10% !important;
+}
+
+.is-about {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}

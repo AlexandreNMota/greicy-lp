@@ -1,11 +1,8 @@
 import { styled } from "@mui/material/styles";
 
-export const StyleNav = styled("ul")(({}) => {
+export const StyleNav = styled("nav")(({}) => {
   return {
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-    listStyleType: "none",
+
   };
 });
 

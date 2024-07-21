@@ -1,0 +1,212 @@
+.como-funciona-img {
+  width: 600px;
+  height: 392px;
+}
+
+.anjo {
+  width: 800px;
+  height: 800px;
+}
+
+.logo-produtos {
+  position: absolute;
+  left: 45%;
+  width: 150px;
+}
+
+.sign-produtos {
+  position: relative;
+  left: 45%;
+  top: 15%;
+  width: 150px;
+}
+
+.livros-produtos {
+  width: 70%;
+  z-index: 2;
+}
+
+.greicy-model-produtos {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  top: -15%;
+  right: -20%;
+}
+
+.bg-wave-produtos {
+  position: relative;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.greicy-model-mobile {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  top: -5%;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .como-funciona-img {
+    width: 100%;
+    height: auto;
+  }
+  .anjo {
+    width: 100%;
+    height: auto;
+  }
+  .logo-produtos {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+  }
+  .sign-produtos {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12%;
+    width: 120px;
+  }
+  .livros-produtos {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .greicy-model-produtos {
+    width: 90%;
+    height: auto;
+    top: -10%;
+    right: -10%;
+  }
+  .bg-wave-produtos {
+    bottom: 0;
+    height: 175px;
+  }
+  .greicy-model-mobile {
+    height: auto;
+    top: -2%;
+    margin-left: 20% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .como-funciona-img {
+    width: 80%;
+    height: auto;
+  }
+  .anjo {
+    width: 100%;
+    height: auto;
+  }
+  .logo-produtos {
+    left: 45%;
+    width: 130px;
+  }
+  .sign-produtos {
+    left: 45%;
+    top: 14%;
+    width: 130px;
+  }
+  .livros-produtos {
+    width: 75%;
+    margin-top: 50px;
+  }
+  .greicy-model-produtos {
+    width: 80%;
+    height: auto;
+    top: -12%;
+    right: -15%;
+  }
+  .bg-wave-produtos {
+    bottom: 0;
+    height: 190px;
+  }
+  .greicy-model-mobile {
+    height: auto;
+    top: -3%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .como-funciona-img {
+    width: 70%;
+    height: auto;
+  }
+  .anjo {
+    width: 100%;
+    height: auto;
+  }
+  .logo-produtos {
+    left: 45%;
+    width: 140px;
+  }
+  .sign-produtos {
+    left: 45%;
+    top: 15%;
+    width: 140px;
+  }
+  .livros-produtos {
+    width: 70%;
+  }
+  .greicy-model-produtos {
+    width: 70%;
+    height: auto;
+    top: -13%;
+    right: -18%;
+  }
+  .bg-wave-produtos {
+    bottom: 0;
+    height: 200px;
+  }
+  .greicy-model-mobile {
+    height: auto;
+    top: -4%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .como-funciona-img {
+    width: 600px;
+    height: 392px;
+  }
+  .anjo {
+    width: 600px;
+    height: 600px;
+  }
+  .logo-produtos {
+    left: 45%;
+    width: 150px;
+  }
+  .sign-produtos {
+    left: 45%;
+    top: 15%;
+    width: 150px;
+  }
+  .livros-produtos {
+    width: 70%;
+  }
+  .greicy-model-produtos {
+    width: 500px;
+    height: 600px;
+    top: -15%;
+    right: -20%;
+  }
+  .bg-wave-produtos {
+    bottom: 35%;
+    height: 200px;
+  }
+  .greicy-model-mobile {
+    width: 100%;
+    height: 60%;
+    top: -5%;
+  }
+}
