@@ -114,12 +114,16 @@
     }
 
     #especialidades-section {
-        margin-top: 0 !important; /* Para garantir que a seção ocupe a altura total da tela */
+        margin-top: 5vw !important; /* Para garantir que a seção ocupe a altura total da tela */
     }
 }
 
 @media (min-width: 1600px) {
     .subtitle2-especialidades {
         font-size: 1vw !important;
+    }
+
+    #especialidades-section {
+        margin-top: 0 !important; /* Para garantir que a seção ocupe a altura total da tela */
     }
 }

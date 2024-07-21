@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useRef} from "react";
+import React, {FC} from "react";
 import {
     Box,
     Card,
@@ -69,23 +69,6 @@ export const Especialidades: React.FC = () => {
         setModalOpen(true);
     };
 
-    const playerRef = useRef(null); // Crie uma referência
-
-    useEffect(() => {
-
-    }, []);
-    (() => {
-        if (modalOpen) {
-            // Verifique se o navegador suporta a API Fullscreen
-            if (playerRef.current.requestFullscreen) {
-                playerRef.current.requestFullscreen();
-            } else if (playerRef.current.webkitRequestFullscreen) { /* Safari */
-                playerRef.current.webkitRequestFullscreen();
-            } else if (playerRef.current.msRequestFullscreen) { /* IE/Edge */
-                playerRef.current.msRequestFullscreen();
-            }
-        }
-    }, [modalOpen]);
 
     const closeModal = () => {
         setModalOpen(false);
@@ -108,14 +91,14 @@ export const Especialidades: React.FC = () => {
                     onClose={closeModal}
                     maxWidth="sm"
                     fullWidth
+                    sx={{maxHeight: '100vh'}}
                 >
                     <DialogContent>
                         <ReactPlayer
-                            ref={playerRef}
                             url={currentVideo}
                             playing={modalOpen}
                             width="100%"
-                            height="100%"
+                            height="800px"
                             controls={true}
                         />
                     </DialogContent>
