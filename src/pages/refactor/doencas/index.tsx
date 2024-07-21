@@ -61,9 +61,10 @@ const SpecialtiesContent: React.FC = () => (
 
 export const Especialidades: React.FC = () => {
     const {isMobile} = useAppContext();
-    const cardLayoutProps = isMobile ? {xs: 12} : {xs: 12, sm: 6};
+    const cardLayoutProps = isMobile ? {xs: 12} : {xs: 12, lg: 6};
     const [modalOpen, setModalOpen] = React.useState(false);
     const [currentVideo, setCurrentVideo] = React.useState('');
+    const [height, setHeight] = React.useState(window.innerHeight * 0.8);
     const openModal = (videoUrl) => {
         setCurrentVideo(videoUrl);
         setModalOpen(true);
@@ -73,6 +74,18 @@ export const Especialidades: React.FC = () => {
     const closeModal = () => {
         setModalOpen(false);
     }
+
+    React.useEffect(() => {
+        const updateSize = () => {
+            const eightyPercentScreenHeight = window.innerHeight * 0.8;
+            setHeight(eightyPercentScreenHeight);
+        };
+        window.addEventListener('resize', updateSize);
+        updateSize();
+
+        // Clean up event listener for memory efficiency
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
     return (
         <Section id="especialidades-section">
             <div className="content-especialidades">
@@ -98,7 +111,7 @@ export const Especialidades: React.FC = () => {
                             url={currentVideo}
                             playing={modalOpen}
                             width="100%"
-                            height="800px"
+                            height={height}
                             controls={true}
                         />
                     </DialogContent>

@@ -38,10 +38,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    padding-top: 5rem;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*padding-top: 5rem;*/
     z-index: 999;
+    margin-top: -90px;
 
 }
 
@@ -75,6 +76,17 @@
         font-size: 3vw !important;
     }
 
+    .spacer-especialidades {
+
+        margin-top: -180px;
+
+    }
+
+    .rotated-especialidades {
+
+        margin-top: -10vw !important;
+    }
+
 
 }
 
@@ -96,6 +108,12 @@
     .subtitle2-especialidades {
         font-size: 2vw !important;
     }
+
+    .spacer-especialidades {
+
+        margin-top: -210px;
+
+    }
 }
 
 @media (min-width: 992px) {
@@ -106,6 +124,12 @@
     .subtitle2-especialidades {
         font-size: 1.5vw !important;
     }
+
+    .spacer-especialidades {
+
+        margin-top: -300px;
+
+    }
 }
 
 @media (min-width: 1200px) {
@@ -113,8 +137,19 @@
         font-size: 1vw !important;
     }
 
+    .spacer-especialidades {
+
+        margin-top: -380px;
+
+    }
+
     #especialidades-section {
         margin-top: 5vw !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .rotated-especialidades {
+
+        margin-top: -12vw !important;
     }
 }
 
@@ -125,5 +160,11 @@
 
     #especialidades-section {
         margin-top: 0 !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .spacer-especialidades {
+
+        margin-top: -400px;
+
     }
 }
