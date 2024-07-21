@@ -1,70 +1,63 @@
-import { Box, Typography } from "@mui/material";
-import {
-  BigText,
-  GridContainer,
-  GridItem,
-  ImageContainer,
-  Title,
-} from "../../global";
-import { CustomText } from "../../about";
-import { SaibaMaisButton } from "../saiba-mais-button";
+import {Box, Typography} from "@mui/material";
+import {BigText, GridContainer, GridItem, ImageContainer, Title,} from "../../global";
 import logo from "../../../assets/produtos-logo.png";
 import sign from "../../../assets/sign.png";
 import bgWaveProdutos from "../../../assets/bg-produtos-wave.png";
 import livros from "../../../assets/livros.png";
 import GreicyModel from "../../../assets/greicy-top-model.png";
-import { produtosDescription } from "../../../constantes/description";
+import {produtosDescription} from "../../../constantes/description";
+import "./index.css"
+import {SaibaMaisButton} from "../saiba-mais-button";
+
 export const ProdutosDesktop = () => {
-  return (
-    <>
-      <Title title="Produtos" sx={{ width: "100%", textAlign: "center" }} />
-      <ImageContainer src={logo} classe="logo-produtos" />
-      <ImageContainer src={sign} classe="sign-produtos" />
-      <GridContainer>
-        <GridItem xs={6} flexAround={true} directionFlex="column">
-          <Box className="box-grid-1">
-            <BigText
-              text="Autorias"
-              branco={true}
-              hasMarginBottom={true}
-              sx={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-            />
-            <Typography
-              className="product-desc-refactor"
-              sx={{
-                textAlign: "justify",
-                fontSize: {
-                  sm: ".75rem !important",
-                  md: "1rem !important",
-                  lg: "1.25rem !important",
-                  xl: "1.5rem !important",
-                },
-              }}
+    return (
+        <div style={{position: "absolute", height: "100vh"}}>
+            <Title title="Produtos" sx={{width: "100%", textAlign: "center"}}/>
+            <ImageContainer src={logo} classe="pd-logo-produtos"/>
+            <ImageContainer src={sign} classe="pd-sign-produtos"/>
+            <GridContainer>
+                <GridItem xs={6} flexAround={true} directionFlex="column">
+                    <Box className="pd-box-grid-1">
+                        <BigText
+                            text="Autorias"
+                            branco={true}
+                            hasMarginBottom={true}
+                            sx={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "flex-start",
+                            }}
+                        />
+                        <Typography
+                            className="product-desc-refactor"
+                            sx={{
+                                textAlign: "justify",
+                                fontSize: {
+                                    sm: "1rem !important",
+                                    md: "2rem !important",
+                                    lg: "1.25rem !important",
+                                    xl: "1.5rem !important",
+                                },
+                            }}
+                        >
+                            {produtosDescription}
+                        </Typography>
+                        {/* <CustomText text={produtosDescription} classe="product-desc" /> */}
+                    </Box>
+                    <ImageContainer src={livros} classe="pd-livros-produtos"/>
+
+                </GridItem>
+                <GridItem xs={6} flexStart={true}>
+                    <ImageContainer src={GreicyModel} classe="pd-greicy-model-produtos"/>
+                </GridItem>
+            </GridContainer>
+            <Box className="pd-container-saiba-mais"
+
             >
-              {produtosDescription}
-            </Typography>
-            {/* <CustomText text={produtosDescription} classe="product-desc" /> */}
-          </Box>
-          <ImageContainer src={livros} classe="livros-produtos" />
-          <Box
-            sx={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-end",
-            }}
-          >
-            <SaibaMaisButton />
-          </Box>
-        </GridItem>
-        <GridItem xs={6} flexStart={true}>
-          <ImageContainer src={GreicyModel} classe="greicy-model-produtos" />
-        </GridItem>
-      </GridContainer>
-      <ImageContainer src={bgWaveProdutos} classe="bg-wave-produtos" />
-    </>
-  );
+                <SaibaMaisButton/>
+            </Box>
+            <ImageContainer src={bgWaveProdutos} classe="pd-bg-wave-produtos"/>
+
+        </div>
+    );
 };
