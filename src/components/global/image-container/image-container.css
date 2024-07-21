@@ -365,3 +365,26 @@
         z-index: 999;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .pd-bg-wave-produtos {
+
+        height: 20vw;
+    }
+
+    .pd-greicy-model-produtos {
+        width: 750px;
+        height: 850px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+
+    .pd-livros-produtos {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        width: 550px;
+        z-index: 999;
+    }
+}
