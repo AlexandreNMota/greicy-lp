@@ -1,0 +1,125 @@
+#especialidades-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.eclipse36-especialidades {
+    z-index: 1;
+}
+
+.content-especialidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    flex: 1;
+
+}
+
+.card-container-especialidades {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.MuiCardContent-root {
+    height: 150px; /* replace with your preferred height */
+    overflow: auto; /* add a scrollbar if content is too long */
+}
+
+.spacer-especialidades {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding-top: 5rem;
+    z-index: 999;
+
+}
+
+.rotated-especialidades {
+    transform: rotate(175deg);
+    align-self: flex-end; /* Para garantir que a imagem fique no final */
+    margin-top: 14vw !important;
+}
+
+.title-especialidades {
+    color: #44c6e9;
+    font-weight: bold;
+}
+
+.subtitle-especialidades {
+    color: #00296d;
+    font-size: 35px !important;
+}
+
+.subtitle2-especialidades {
+    font-size: 1vw !important;
+}
+
+
+@media (min-width: 500px) {
+    #especialidades-section {
+        margin-top: 10px; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .subtitle2-especialidades {
+        font-size: 3vw !important;
+    }
+
+
+}
+
+@media (min-width: 600px) {
+    #especialidades-section {
+        margin-top: 6vw !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .subtitle2-especialidades {
+        font-size: 2.5vw !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #especialidades-section {
+        margin-top: 1vw !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .subtitle2-especialidades {
+        font-size: 2vw !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #especialidades-section {
+        margin-top: 6vw !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+
+    .subtitle2-especialidades {
+        font-size: 1.5vw !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subtitle2-especialidades {
+        font-size: 1vw !important;
+    }
+
+    #especialidades-section {
+        margin-top: 0 !important; /* Para garantir que a seção ocupe a altura total da tela */
+    }
+}
+
+@media (min-width: 1600px) {
+    .subtitle2-especialidades {
+        font-size: 1vw !important;
+    }
+}
