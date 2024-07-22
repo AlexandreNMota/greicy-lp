@@ -33,9 +33,9 @@ export const ProdutosDesktop = () => {
                             sx={{
                                 textAlign: "justify",
                                 fontSize: {
-                                    sm: "1rem !important",
-                                    md: "1.15rem !important",
-                                    lg: "1.5rem !important",
+                                    sm: "0.75rem !important",
+                                    md: ".75rem !important",
+                                    lg: "1rem !important",
                                     xl: "1.5rem !important",
                                 },
                             }}

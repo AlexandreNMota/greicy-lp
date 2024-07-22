@@ -112,27 +112,29 @@
 }
 
 @media only screen and (min-width: 600px) {
+
+
     .pd-bg-wave-produtos {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 50vw;
+        height: 30vh;
     }
 
     .pd-greicy-model-produtos {
-        width: 500px;
-        height: 600px;
+        width: 50vw;
+        height: 70vh;
         position: absolute;
         top: 20%;
-        right: -20%;
+        right: 0%;
     }
 
     .pd-livros-produtos {
         position: relative;
         bottom: -20%;
         right: -25%;
-        width: 450px;
+        width: 50vw;
         z-index: 999;
     }
 
@@ -140,7 +142,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
-        width: 150px;
+        width: 20vw;
     }
 
     /*.pd-sign-produtos {*/
@@ -152,9 +154,9 @@
     .pd-sign-produtos {
         position: absolute;
         left: 50%;
-        top: 150px;
+        top: 20vw;
         transform: translate(-50%, -50%);
-        width: 150px;
+        width: 20vw;
     }
 }
 
@@ -205,32 +207,33 @@
 
     .pd-bg-wave-produtos {
 
-        height: 40vw;
+        height: 40vh;
     }
 
     .pd-greicy-model-produtos {
-        width: 600px;
-        height: 700px;
+        width: 40vw;
+        height: 70vh;
         position: absolute;
         top: 10%;
-        right: -15%;
+        right: 0%;
     }
 
     .pd-livros-produtos {
         position: absolute;
         bottom: 5%;
         left: 10%;
-        width: 500px;
+        width: 50vw;
         z-index: 999;
     }
 
-    /*.pd-logo-produtos {*/
-    /*    left: 40%;*/
-    /*    width: 150px;*/
-    /*}*/
-    /*.pd-sign-produtos {*/
-    /*    left: 40%;*/
-    /*}*/
+    .pd-logo-produtos {
+        /*left: 40%;*/
+        width: 15vw;
+    }
+    .pd-sign-produtos {
+        width: 15vw;
+        top: 15vw;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -279,24 +282,36 @@
 
     .pd-bg-wave-produtos {
 
-        height: 31vw;
+        height: 40vh;
     }
 
     .pd-greicy-model-produtos {
-        width: 650px;
-        height: 750px;
+        width: 50vw;
+        height: 75vh;
         position: absolute;
         top: 5%;
-        right: -10%;
+        right: -5%;
     }
 
     .pd-livros-produtos {
         position: absolute;
         bottom: 5%;
         left: 10%;
-        width: 550px;
+        width: 50vw;
         z-index: 999;
     }
+
+    .pd-logo-produtos {
+        /*left: 40%;*/
+        width: 15vw;
+    }
+    .pd-sign-produtos {
+        width: 15vw;
+        top: 15vw;
+    }
+
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -346,27 +361,36 @@
 
     .pd-bg-wave-produtos {
 
-        height: 25vw;
+        height: 30vh;
     }
 
     .pd-greicy-model-produtos {
-        width: 700px;
-        height: 800px;
+        width: 40vw;
+        height: 90vh;
         position: absolute;
         top: 0%;
-        right: -5%;
+        right: 0%;
     }
 
     .pd-livros-produtos {
         position: absolute;
         bottom: 5%;
         left: 10%;
-        width: 550px;
+        width: 35vw;
         z-index: 999;
+    }
+
+    .pd-logo-produtos {
+        /*left: 40%;*/
+        width: 12vw;
+    }
+    .pd-sign-produtos {
+        width: 12vw;
+        top: 12vw;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
     .pd-bg-wave-produtos {
 
         height: 20vw;
